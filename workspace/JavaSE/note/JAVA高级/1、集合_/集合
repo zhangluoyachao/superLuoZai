@@ -1,0 +1,274 @@
+day12
+一、Junit：
+精简的框架，可以让任意的方法，只要添加一个注解，就能实现方法的测试。
+类似于main方法，但有些差异，一个类中能存在多个。
+1、导包    junit.jar(创建一个目录保存jar包 通过jar右键add添加到model中)
+
+2、随便写一个类，随便写方法（方法不能带参数），该方法只要添加对应注解，就可以测试运行
+import org.junit.Test;
+class Abc{
+    @Test
+    public void d(){//底层实现就是main方法
+
+    }
+}
+开发不会使用，提供给程序员做测试
+注意事项:
+a.导包出错：兼容性出错，换一个版本的相关jar包，推荐使用4.10版本
+b.跟Scanner不兼容,因为junit不允许使用参数，所以接收不到值
+c.定义方法时只能使用public void 方法名（无参）{}
+方法带参数、有返回值、有静态修饰符和不为public都会报异常
+
+3、注解
+a. @Test 测试方法
+b. @Before 在测试方法开始之前执行
+c. @After 在测试方法执行之后执行
+@Before与@After在每个测试方法执行前后都会执行（如果测试整个类，那么类中的每个方法前后都会执行）
+@Before 可以在测试方法之前添加一些初始化，或者加载一些类的资源
+@After 可以在测试方法结束，释放资源，节省内存
+
+
+Java高级
+集合 线程 IO 反射 socket
+一、集合
+数组：在堆内存分配一个连续的空间，用于存储数据，长度固定、类型固定。用于存储很多相同类型的变量
+集合：类似于数组，存储一系列的数据，长度不固定、类型不固定，相对数组更加灵活
+集合的底层实现依旧是数组，是一个长度可变的数组，内部实现了数组的自动扩容
+默认值一般为10，当长度超过一定基数，自动扩容，长度增长为 array.length*1.5（扩容50%）
+int num[] = new int[10];
+num = Array.copyOf(num,(int)(num.length*1.5));
+
+二、集合分类
+1、分类
+Collection 集合的父接口   Map接口
+其子类：
+    List接口
+    Set 接口
+
+List集合  Set集合   Map集合
+
+注：Collections集合工具类
+Collections.sort(List); 对集合进行排序
+shuffle(list);  “洗牌”，随机打乱集合
+2、List集合与Set集合
+区别：List 元素可以重复  存在下标的   元素是有序的
+     Set 元素是唯一的    不存在下标    元素是无序的
+
+三、List集合
+1、实现：
+List list = new 实现类();
+
+2、实现类：接口的子类
+一般有三种
+①ArrayList（常用）: 数组实现    查询快，增删慢  线程不安全  效率高
+②Vector:    数组实现    查询快，增删慢  线程安全    效率低
+③LinkedList: 链表实现   查询慢，增删快  线程不安全  效率高
+
+3、List集合常用方法：
+size()； 获取集合的长度
+add(参数);  新增元素
+参数：一个参 则在集合后插入元素
+     两个参 add(index,元素) 在指定下标插入新元素，其他元素后移
+addAll(集合)； 添加新元素集合
+参数：一个参 则在集合后插入另一个集合的元素
+     两个参 addAll(index,集合) 在指定下标插入另一个集合中的元素
+add也能插入集合，但是是插入集合对象
+add:[10, 20, 30, [1, 2, 3, 4, 5]]
+addAll:[10, 20, 30, 1, 2, 3, 4, 5]
+get(下标);  获取集合中的元素(只能通过下标获取)
+注：获取到的元素不做规定都是object类型，接收时可以进行强制类型转换
+int a = (int)list.get(2);
+set(index,元素)；  修改指定位置的元素
+返回值：返回修改前的值
+contains(参数);  判断元素是否存在
+remove(参数);   删除元素
+参数： 下标  返回该元素
+      元素  返回布尔类型的值  并且只删除第一个相应元素
+注:如果是Integer类型，要想删除指定元素不能使用
+   remove(2)这种形式表示删除下标为2
+   删除2这个值使用remover((Integer)2);
+isEmpty();   判断集合是否为空
+判断集合的元素个数是否为0，如果为0返回true
+indexOf(参数);    判断参数首次出现在集合中的下标
+lastIndexOf(参数);    判断参数最后一次出现在集合中的下标
+同数组，没有返回-1
+
+
+四、集合的泛型
+集合虽然是任意类型，但是一般情况下要给集合添加泛型
+1、泛型：规定集合里面必须存储什么类型的数据
+定义：集合类型<类型参数>
+类型参数：只能为类，所以说基本类型只能用其封装类
+List<String> list = new ArrayList<String>();
+JDK1.8以后，后面的类型可以省略==>
+List<String> list = new ArrayList<>();
+
+五、集合的遍历
+1、常规for循环
+2、增强for循环
+3、迭代器：是一种设计模式，是一种轻量级（耗费的资源少）对象
+   迭代器是Collection接口的方法（Map么的）  将集合转换成一个序列
+   每次通过next()来获取序列中的下一个元素
+
+   hasNext() 判断是否有下一个
+   有返回true
+   next() 获取序列的下一个元素 只能单向获取（只能获取下一个）
+①创建迭代器对象
+Iterator it = list.iterator();
+②while(it.hasNext){
+    it.next();
+}
+
+六、LinkedList集合
+1、用法类似ArrayList   更加适用于增删    不适合查询
+
+2、特有方法：这些方法不是List接口的方法 LinkedList独有的方法
+addFirst();
+addLast();
+getFirst();
+getLast();
+removeFirst();
+removeLast();
+因为方法是特有的 所以说不能用Link指向调用方法
+只能声明为LinkedList的集合才能使用
+LinkedList linkedList = new LinkedList();
+
+六、Set集合
+1、元素默认无序  没有下标（不能使用普通for循环）   元素唯一
+Set本身也是一个接口，不能被实例化  需要new实现类创建Set集合
+2、Set的实现类：
+HashSet（常用）: 通过哈希码保存元素，可以防止元素重复 无序的 线程不安全   运行效率高
+TreeSet: 基于树状结构，可以实现排序功能，支持自然排序
+排序：对于基本数据类型可以实现默认升序排序，String是比较第一个 再比较第二个
+     如果是特殊类型，比如对象、数组、集合，可以通过比较器对象 自定义排序规则
+
+Set没有get方法
+
+七、HashSet底层原理
+1、HashSet底层原理是HashMap:
+是基于数组+链表+红黑树（jdk1.8开始出现红黑树）构成
+
+2、如何保证元素不重复：
+它会把所有存入的数据都转换成hashCode，
+
+3、存入新元素时，会判断新的元素的hashCode和HashSet集合中已有元素的hashCode是否相同。（HashSet集合中没有元素之时存入哈希桶中）
+    a、不相同，则存在新的哈希桶中，
+    b、如果相同，则会判断值是否相同。
+        a、值相同，替换
+        b、值不同，会在hash桶的下面拼一个链表来保存元素
+            链表长度又有限制：
+                a、当链表长度<=8时，为链表
+                b、当链表长度>8时，链表会转换成红黑树。
+                    红黑树：当红黑树<6时，会转换成链表
+
+4、哈希码 HashCode
+一共分三种实现：
+    1、Object类的哈希码：保存的是对象的引用地址
+    2、Integer类的哈希码：保存的是对于的数值
+    3、String类的哈希码：通过字符串内容、根据特定的算法、最终形成的值
+    String.equals()如果字符串相同  转换的哈希码一定相同
+                   如果哈希码相同  但是转换回的字符串不一定相同
+
+八、TreeSet集合
+特点：基于树状结构构成，线程不安全，默认支持自然排序
+1、数组转集合
+数组工具类：Arrays.asList(ary);
+2、排序
+    1）.数字类型按大小进行排序
+    2）.字符串类型：比较第一个 再比较第二个，字符串内是数字也是。
+    [1, 11, 3, Aaa, aaa, abc, bbc, bcd, cac, cca]
+    3）.对象类型：TreeSet排序对象，如果没有排序方式默认会报错：ClassCastException
+        实现方式:
+        a.外部比较 Comparator
+            单独创建一个类 去实现User对象的比较规则
+            再实现Comparator接口中compare方法
+            class Com implements Comparator<User> {
+                 @Override
+                 public int compare(User o1, User o2) {
+                     //返回值决定了排序顺序    正序  倒序  相同
+                     //o1.getId()-o2.getId() 正序
+                     //o2.getId()-o1.getId() 倒序
+                     return o1.getId() - o2.getId();
+                 }
+            }
+
+            这样实现，需要创建一个类，并且实现接口与其方法，非常复杂，
+            有其他方法来替换它：
+            1、匿名内部类
+            2、lamada表达式（jdk1.8以后）
+            Comparator<User> com = (o1, o2) -> o1.getId() - o2.getId();
+            Set<User> set = new TreeSet<>(com);
+            可以简化==>
+            Set<User> set = new TreeSet<>((o1, o2) -> o1.getId() - o2.getId());
+
+        b.内部比较 Comparable
+            在对象类型的内部添加实现接口Comparable接口，
+            同时实现:comparTo()方法
+                @Override
+                public int compareTo(User o) {
+                    //this==>o1 o==>o2
+                    return this.getId() - o.getId();
+                }
+        c.外部比较Comparator和内部比较Comparable的区别？ 面试题
+            Comparator属于Java.util包
+            需要专门定义一个类来实现Comparator接口，并实现其compare()方法。
+            不过可以通过匿名内部类来简化其过程，JDK1.8之后，还可以使用lamada表达式
+            Comparable属于Java.lang包
+            内部比较，在需要比较的类中实现Comparable接口，并且实现其comparTo()方法
+
+            Comparator相比Comparable更加灵活，因为实现规则很多，更加便于比较其他类型，程序耦合性低。
+
+九、Map集合
+1、Map特点
+    不是Collection的子接口
+    通过键-值的方式来存储数据
+    键-值 key-value--> 一个map中的元素
+    键和值就代表一个map的实体（entry） 哈希桶中存放的就是entry
+    键的特点: key唯一的（底层实现 哈希函数 数组+链表+红黑树）
+             value 可以重复
+
+2、Map中的常用方法：
+    size()
+    put(key,value) key同hashSet原理 完全相同则替换
+    get(key)    通过key获取元素   返回获取的元素
+    remove(key)     通过key删除元素   返回删除的元素，如果没有改键则返回null
+    keySet()    返回map中所有key的Set集合
+    values()    返回map中所有值的集合
+    containsKey(key)   判断指定key是否存在
+    containsValue(value)   判断指定value是否存在
+
+3、Map实现类
+HashSet==>HashMap   TreeSet==>TreeMap
+
+HashMap:    允许key为null  线程不安全的
+HashSet的实现原理就是HashMap
+    HashMap实现原理：数组+链表+红黑树
+    每个哈希桶都会放一个entry(key+value)
+    每次存储判断key的hashVode是否一致（之后过程同HashSet）
+HashTable:  不允许key为null 线程安全的
+TreeMap:
+与TreeSet一致 底层实现原理一致
+HashSet的实现原理就是HashMap
+LinkedHashMap:基于hashCode实现
+
+4、Map实现类的遍历
+map的遍历一般是遍历key值 然后通过key值获取value
+    1、增强for
+        for (String a : map2.keySet()) {
+            System.out.println("key:" + a + " value:" + map2.get(a));
+        }
+    2、
+
+
+        //迭代器
+        //通过keySet()方法创建迭代器
+        Iterator<String> it = map2.keySet().iterator();
+        while (it.hasNext()) {
+            String key = it.next();
+            System.out.println("key:" + key + " value:" + map2.get(key));
+        }
+        //entry 表示实体，包含了key和value
+        //获取Map中的所有实体
+        for (Map.Entry<String, User> a : map2.entrySet()) {
+            System.out.println(a.getKey() + a.getValue());
+        }

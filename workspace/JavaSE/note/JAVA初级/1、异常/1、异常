@@ -1,0 +1,122 @@
+一、什么是异常？Exception
+在java程序执行中出现的不正常的情况，导致JVM的非正常停止称之为“异常”
+    语法错误和逻辑错误不算异常
+java中用类表示异常，其类是可以创建对象的,被创建的对象就是一个异常
+NullPointerException  e = new NullPointerException();
+如果出现空指针，JVM就会创建空指针异常对象抛出异常，并向控制台输出异常信息
+并且出现异常，异常之后的代码不执行
+
+二、异常机制的作用
+JAVA语言会为我们提供一种完善的异常处理机制
+作用：程序发生异常事件之后，为我们输出详细的信息，程序员通过这个信息，
+可以对程序进行一些处理，使得程序更加健壮
+
+三、异常的分类
+1、异常的层次结构
+    Throwable 所有异常的父类(java.lang.Throwable)
+        1、Error 错误，是指正常情况下，不大可能出现的严重情况，一般不对其做处理，只能对代码进行修改
+            如：JVM出错、堆空间溢出、栈空间溢出等
+        2、Exception 异常，可以预料的意外情况,可能并且应该被捕获，进行相应针对性处理。
+            Exception子类：
+                1、编译时异常（受检（checked）异常）：所有Exception的直接子类（除了运行异常外的异常）
+                   java源文件 --javac--> class字节码文件 时候出现的（代码会报红，编译不通过）
+                   常见:
+                        IOException（IO中的异常）
+                            FileNotFoundException(文件丢失异常)
+                        ClassNotFountException
+                2、运行时异常（非受检（unchecked）异常）：RuntimeException，继承自Exception类
+                   class字节码文件在内存中加载运行的时候出现的 （代码编译完成后，运行时候）
+                   常见：
+                        1、NullPointerException 空指针异常
+                        2、ArrayIndexOutOfBoundsException 数组角标越界
+                            (..)IndexOutOfBoundsException 各种类型的角标越界
+                        3、ClassCastException 类型转换异常
+                            当试图将对象强制转换为不是实例的子类时，抛出该异常
+                                如果为其子类，必须父类的引用对象指向子类（有多态时）才能进行强制类型转换
+                        4、NumberForMatException 数字格式异常
+                            通过Integer.parseInt(str);让字符串转为数字时
+                            若str="abc";则会抛出该异常
+                        5、InputMismatchException 输入不匹配异常
+                            Scanner中，sc.nextInt(),输入字符串，抛出异常
+                        6、ArithmeticException 算数异常
+                            int a=1,b=0; a/b; //除零问题
+
+面试题：常见的异常有哪些？举例说明
+
+四、异常处理机制
+判断输入格式正确，要加入大量的if else结构，使得非常的臃肿。所以JAVA中就引入的异常处理机制
+1、异常的处理(抓抛模型)
+    过程一：抛 程序在正常执行时，出现异常，就会在异常代码处生成一个异常类的实例对象，并把此对象抛出。
+            一旦抛出对象，之后的代码就不执行
+    过程二：抓 可以理解为异常处理方式
+2、处理机制分类：
+    1、try-catch-finally（解决异常）
+    2、throws + 异常类型（抛出异常，由其他类型来解决）
+
+五、try-catch-finally的使用
+1、格式：
+    try{
+        可能出现异常的代码
+    }catch(异常类型1 变量名1){//出现相应异常则调用对应代码，处理完成跳出try-catch结构执行finally已经其后的代码
+        处理异常的方式1
+    }catch(异常类型2 变量名2){
+        处理异常的方式2
+    }catch(异常类型3 变量名3){
+        处理异常的方式3
+    }....
+    finally{
+        一定会执行的代码
+    }
+    1、finally可选 类似default
+        1、finally中声明的是一定会被执行的代码，
+            a、就算catch中出现异常，代码中return,也finally一定会执行(System.exit();方法除外)
+            b、如果finally中有return,try也有return，那么会先执行finally中的return,返回try中的值
+            c、如果finally中有return,catch也有return，那么会后执行finally中的return，返回finally中的值
+        2、像数据连接、输入输出流、网络编程Socket等资源，JVM是不能自动的回收的，我们需要手动释放。
+        此时就可以声明在finally中
+    2、使用try将可能出现异常的代码包起来，一旦出现异常，就会生成对应异常类型的实例对象，然后与catch中的进行匹配
+    3、如果try中的异常类型与catch中的类型匹配，就会执行相应catch中的代码，执行完成后会跳出try-catch结构
+       执行finally中的以及后面的代码
+    4、如果catch中的异常类型存在子父类，那么父类必须在子类下面，要不然子类catch就无法到达。
+    5、在try中声明变量，try之外不能使用
+    6、处理编译时异常后，编译异常不报错，运行时可能还会出错
+    7、一般开发的时候，运行时异常不做try-catch处理，直接修改代码
+    对编译时异常进行异常处理
+    8、在try中，异常抛出点后的代码不再执行
+2、异常类中常用方法
+    1、getMessage(); 返回的是一个字符串，需要自己输出
+       System.out.println(e.getMessage);
+       Test2中结果：For input string: "abc"
+    2、printStackTrace(); 输出正常异常结果   包含getMessage()
+
+六、throws+异常类型的使用
+1、写在方法的声明出，指明此方法运行时，可能抛出这种类型的异常。
+一旦当方法体执行时，出现异常，仍会在异常代码处生成一个异常类的对象，
+当此对象满足异常类型时，就会被抛出。异常代码后面的代码不再执行。
+2、throws只是将异常抛给了方法的调用者，并没有真正的处理掉异常
+
+3、方法重写的规则
+    1、子类重写的方法抛出异常类型不能大于父类
+    2、如果父类中没有抛出异常，子类就只能使用try-catch-finally处理异常
+
+七、两种异常处理
+1、选择：
+    1、如果父类中没有抛出异常，子类就只能使用try-catch-finally处理异常
+    2、执行方法中，先后调用了几个方法，它们直接是递进关系，这几个方法的异常处理就使用
+    throws，在调用时候try-catch解决
+
+八、手动抛出异常类型
+1、异常对象的产生：
+    a、系统自动生成的异常
+    b、手动抛出的异常
+2、手动抛出异常
+throw new 异常类型；
+    throw new RuntimeException("您输入的数据非法!");
+    参数的形参就是getMessage()方法
+    throw new 异常类型(getMessage());
+
+九、自定义异常类
+1、如何定义
+    1、继承现有的异常类
+    2、提供全局常量：serialVersionUID（自定义类的标识）
+    3、提供重载的构造器

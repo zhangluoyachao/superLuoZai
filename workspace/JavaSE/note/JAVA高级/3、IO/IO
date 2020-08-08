@@ -1,0 +1,196 @@
+一、I/O概述
+1、javaIO：通过java对文件的一系列操作，可以对文件进行读取、写入、创建、复制等。
+2、I/O流：在java中操作文件的类，我们称之为流。所以说提供了JAVA操作的类就是I/O流
+
+二、I/O的分类
+1、根据流向：
+    a.输入流
+    b.输入流
+2、根据单位：
+    a.字符流
+    b.字节流
+3、根据功能：
+    a.节点流
+    b.处理流
+4、 字符：
+        a.字符的输入流：父类Reader 通过字符对文件进行读取（看）
+        b.字符的输出流：父类Writer 通过字符对文件进行写入（改）
+    字节：
+        a.字节输入流：父类InputStream 通过字节对文件进行读取
+        b.字节输出流：父类OutPutStream 通过字节对文件进行写入
+5、字节流和字符流
+区别：
+字符流：用于读取纯文本内容（文本可能会出现乱码，有处理方式）
+字节流：可以读取任何内容，因为任何文件一般都可以转换为字节码
+       视频、doc、音频、图片、文本（字符流更试用）
+6、节点流和数据流
+节点流:可以从某个节点读取数据或者向另一个节点写入数据
+    如：FileInputStream   FileOutputStream    FileReader     FileWriter
+处理流：可以对已经存在的流做封装，增加更多的功能
+    如：BufferedInputStream   BufferedReader... 等缓冲流
+
+三、文件 File类
+1、java.io.File包下的 泛指文件或目录
+   可以提供对于文件一些基本操作：路径、大小、文件名、创建、删除
+   只有一点实现不了:不能对文件的内容进行操作（不能读取写入）
+2、File类基本方法
+    1、exists()   判断文件是否存在
+    2、mkdir()
+       mkdirs()   创建目录
+       返回值为boolean类型
+       区别：
+           a.mkdir   父级目录不存在，创建会失败
+           b.mkdirs  父级目录不存在，会逐级创建全部的父目录
+    3、createNewFile()   创建文件
+    4、delete()   删除文件/目录    只能删除空目录
+    5、isFile()  判断是否是文件
+    6、isDirectory()   判断是否是方法
+    7、getPath()     获取相对路径
+    8、getAbsolutePath()    获取绝对路径
+    9、getName()    获取文件名
+    10、length()   获取文件大小 单位：字节 返沪一个long型
+    11、list()   获取该目录下所有子文件名    返回String[]数组
+            可以筛选子目录下的内容
+            list(FilenameFilter filter)//筛选器
+            FilenameFilter是一个函数接口，只有一个方法：
+                boolean accept(File dir, String name);
+            可以使用lamada表达式：
+            list((dir,name)->{
+                dir是File类型    查找文件对象
+                name是String类型 查找文件名称
+                筛选条件，返回布尔类型
+                name.startWith("...");
+                name.endWith("...");
+                name.indexOf("..."); 不等于-1则为true
+            })
+
+    12、listFile()  获取该目录下的所有子文件对象   返回一个File[]对象数组
+    注：只能取子文件
+    13、renameTo()   返回值为boolean类型
+        a.将一个文件移动到另一个文件目录下
+        file1.renameTo(file2);
+        b.更改文件名
+        file1.renameTo(file2);
+        file1和file2在同一目录下，不同名字
+    14、delete()     只能够删除空目录
+
+    。。。
+四、字节流
+根据字节，对文件进行读取和写入（不适用于中文，因为中文占多个字节，容易乱码）
+输入输出中都存在编译异常
+File
+    1、FileInputStream     文件输入流   所有输入流父类InputStream
+        创建流：
+            FileInputStream fis =new FileInputStream(参数);
+            参数：1、String
+                 2、File对象
+        流中的参数最好写file对象，可以通过file方法获取字节数和文件名、判断存在等
+      方法：
+        1、read()    读取一个字节，流每调用一次就向后读取一个
+            a.返回值：返回一个int类型，是读取的数据对应的ASCII码值
+        2、read(字节数组)    读取一个数组  每次调用就向后读取一个数组长度的字节
+            a.需要先创建一个字节数组 byte[] b = new byte[1024];
+              长度任意，但是一般会默认读取1kb字节
+            b.fis.read(b);    一次性读取一段数据，使用b数组保存
+            c.转换成可读形式：
+                String str = new String(byte[],起始下标,转换长度,编码方式);
+            d.有返回值，返回读取的长度，没有读取到返回-1
+              一般情况下读取时都将其作为判断条件 while(fis.read(b)!=-1){}
+        3、close()   关闭流 关闭资源   一般情况下 流的部分使用结束后都是需要关闭资源的
+            a、为了保证及时关闭，一般抛异常最好用try-catch-finally结构，
+               将流的关闭在finally中执行
+            b、关闭前需要对流是否为空进行判断
+    2、FileOutputStream  文件输出流（写入） 所有输入流父类OutputStream
+      创建：
+           FileOutputStream fileOut = new FileOutputStream(参数);
+           输出流提供了很多输出构造：
+            1、String    写入地址
+            2、File  写入文件
+            3、String,boolean    追加写入地址
+            4、File,boolean     追加写入文件
+      注：a.如果用String写入地址不存在，输出流会自动创建
+            但是如果输出流父级地址不存在，那么就会创建失败，出现FileNotFoundException异常
+            提示找不到指定路径。
+            一般情况下会通过File进行判断其目录是否存在，没有则创建该目录
+
+      方法：
+        1、write()   写一个字节
+           a.参数为int型 表示ASCII码值
+        2、write(数组)    写一个字节数组
+           a.常用方法：String-->byte[]
+                str.getBytes("utf-8")
+           b.参数：
+                 1.byte[]
+                 2.byte[],数组起始位置,导入数组长度
+        3、close()   关闭资源
+        4、flush()   清空缓存
+五、缓冲流
+属于处理流，可以将流做封装，可以提高读取写入的速度
+1、如果不使用缓冲流：读取一个字节或者字节数组，就向指定路径进行写入，随着每一次的写入，都会读取本地磁盘
+          问题：1、访问本地磁盘是很慢的
+               2、会损坏本地磁盘
+
+2、使用缓冲流：存在一个缓冲区（内存），读取到一个字节或者一个字节数组，会先存入缓冲区中保存，等缓冲区满了。
+            再将缓冲区中的数据写入到本地磁盘
+          优点  1、减少访问本地磁盘次数，降低磁盘小号
+               2、访问速度更快，访问内存速度快于访问磁盘
+3、缓存输入流和缓存输出流
+BufferedInputStream
+BufferedOutputStream
+使用方式与正常的IO部分读写相同，创建不同
+创建：
+BufferedInputStream bis = new BufferedInputStream(InputStream);
+BufferedOutputStream bos = new BufferedOutputStream(OutputStream);
+参数为输入输出流，类似于将流进行封装
+注：需要先关闭缓冲流再关闭输入输出流
+    因为缓冲流使用了输入输出流，如果关闭了输入输出流，缓冲流会报错
+    先创建的后关闭（栈）
+
+六、字符流：
+跟字节流使用方法用法都类似，读取单位不同，它每次是读取一个字符
+    一个中文是一个字符，所以说字符流更适合读取文本
+1、输入流   父类 Reader
+    FileReader
+        方法：
+            1、int read()
+                返回值为unicode 有65535个
+            2、int read(char[])
+                返回读取的长度
+            3、int close()
+2、输出流   父类 Writer
+    FileWriter
+        方法：
+            1、write()
+            2、write(char[])
+            3、close()
+3、输入输出的缓存流：
+BufferedReader  BufferedWriter
+
+4、字符的缓冲流
+BufferedReader
+    特有方法：
+        1、String readLine() 读取一整行（知道读取到\n或者），返回这一行
+BufferedWriter
+    特有方法：
+        1、void write(str);  直接写入字符串
+           void write(str,起始位置,长度)
+           一样可以读取char[]数组 和之前相同
+        2、void newLine();   写入一个换行符（根据不同系统自动生成不同的换行符）
+
+七、转换流：字节流转字符流
+InputStreamReader(InputStream): 转换输入流
+OutputStreamWrite(OutputStream): 转换输出流
+类似缓冲流   装饰模式
+
+八、序列化和反序列化
+1、序列化：将java中的对象，转换成字节序列的过程（将java对象转换成本地文件）
+    ObjectOutputStream(OutputStream)
+如果想实现序列化，需要对对象标注成可序列化：
+    1、使对象实现Serializable接口（空接口，标记）
+       没有实现会出现运行时异常：NotSerializableException
+    2、实现序列化可以添加一个隐式属性UID（unique id）
+        如果实现序列化和反序列化，两者对应的UID不同
+        会出现异常：java.io.InvalidClassException 类的验证异常
+        UID是一个固定的常量:
+            public static final long serialVersionUID(一般使用这个名字，可随意)
+2、反序列化：将字节序列，转换成java中的对象（本地文件转java对象）

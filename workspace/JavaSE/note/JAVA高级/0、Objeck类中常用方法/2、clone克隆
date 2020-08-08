@@ -1,0 +1,42 @@
+一、克隆clone
+在堆内存将之前存在的对象直接拷贝一份
+1、浅克隆（默认）：被克隆的类的属性为基本类型和String类型,则可以直接克隆
+                如果是引用类型，则不会被克隆
+步骤：
+    1、被克隆的类实现Cloneable接口，并且实现其clone()方法
+    class TestClone extends Cloneable{
+            private int no;
+            @Override
+            protected Object clone(){
+                return super.clone();
+            }
+        }
+
+    2、类的实例对象使用.clone()方法，则可以在堆内存复制这个对象
+       TestClone c = new TestClone();
+       TestClone c2 = (TestClone)c.clone();   返回的是c这个对象的复制（地址不同）
+2、深克隆：被克隆的类的属性中有引用类型,则需要将引用类型也进行克隆处理
+步骤：
+    1、被克隆的类实现Cloneable接口，重写方法
+       引用类型也需要实现Cloneable接口，重写方法
+       !!在重写的方法中需要对引用类型属性进行克隆，再返回类的克隆
+       class TestClone implement Cloneable{
+               private int no;
+               private A a = new A();//引用类型属性
+               @Override    //被克隆的类中需要返回引用类型的克隆
+               protected Object clone(){
+                    TestClone c = (TestClone)super.clone();//克隆本类
+                    c.a = (A) a.clone();//调用a中的克隆方法，克隆a再赋值给克隆的本类的a
+                    return c;
+               }
+       }
+
+       class A implement Cloneable{
+            private int a;
+            @Override
+            protected Object clone(){
+                return super.clone();
+            }
+       }
+
+    2、同浅克隆

@@ -1,0 +1,32 @@
+1、String转byte[]
+String中的getBytes()方法
+String str = "速度asds的";
+byte[] b = str.getBytes();
+
+2、byte[]转String
+String中的构造方法
+String str = new String(byte[],数组起始位置,数组结束位置);
+一般byte是定长的,不能直接用byte[].length，后面可能会有空值
+
+3、字符复制方式
+    a.字面量形式
+        char ch = 'a';
+    b.赋值ASCII码
+        char ch = 97;
+    c.赋值unicode编码   可以描述世界上所有的字符，包括汉字,共65535个
+        char ch = '\u0000';
+
+4、char[]<==>String
+        String str = "a";
+        char[] ch = new char[10];
+    a.char[]==>String
+        1、String中的String valueOF;方法
+            str = String.valueOf(ch);
+        2、Character中的
+    b.String==>char[]
+        1、String中的char[] toCharArrays();方法
+           ch = str.toCharArrays();
+5、参数个数为若干
+参数为：(数据类型 ... 参数名)
+public void test(int ... is){}
+is为一个int型的数组，个数若干，名字可以任意
