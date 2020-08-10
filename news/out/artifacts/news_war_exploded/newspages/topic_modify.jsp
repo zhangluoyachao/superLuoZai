@@ -15,11 +15,9 @@
 </script>
 <div id="main">
     <%@include file="console_element/left.html" %>
-
     <div id="opt_area">
         <h1 id="opt_type"> 修改主题： </h1>
-        <form action="topic_modify_console.jsp?oldtname=<%=request.getParameter("oldtname")%>" method="post"
-              onsubmit="return check()">
+        <form action="/control/topic_modify_control.jsp" method="post" onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" value=""/>

@@ -32,7 +32,7 @@
 
 <div id="header">
     <div id="top_login">
-        <form action="newspages/login_console.jsp" method="post" onsubmit="return check()">
+        <form action="control/login_control.jsp" method="post" onsubmit="return check()">
             <label> 登录名 </label>
             <input type="text" name="uname" value="" class="login_input"/>
             <label> 密&#160;&#160;码 </label>

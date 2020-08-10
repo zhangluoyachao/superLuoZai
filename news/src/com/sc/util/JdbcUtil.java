@@ -128,13 +128,13 @@ public class JdbcUtil {
 
     }
 
-    public static void close(AutoCloseable... ac) {
-        for (AutoCloseable a : ac) {
-            try {
-                if (a != null) a.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+    public static void close() {
+        try {
+            if (rs != null) rs.close();
+            if (ps != null) ps.close();
+            if (con != null) con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         //清空线程中的连接
         tl.set(null);

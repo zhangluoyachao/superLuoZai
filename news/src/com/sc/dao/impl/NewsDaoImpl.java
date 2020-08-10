@@ -1,4 +1,6 @@
 package com.sc.dao.impl;
 
-public class NewsDaoImpl {
+import com.sc.dao.NewsDao;
+
+public class NewsDaoImpl implements NewsDao {
 }

@@ -1,5 +1,6 @@
 package com.sc.dao.impl;
 
+import com.sc.dao.TopicDao;
 import com.sc.pojo.Topic;
 import com.sc.util.JdbcUtil;
 
@@ -8,42 +9,41 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TopicDaoImpl {
-    public static void insert(Topic t) {
+public class TopicDaoImpl implements TopicDao {
+    public boolean insert(String tname) {
         String sql = "insert into Topic values(id_sql.nextval,?)";
-        JdbcUtil.update(sql, t.getTopicName());
-        JdbcUtil.close();
+        int i = JdbcUtil.update(sql, tname);
+        if (i > 0) {
+            return true;
+        }
+        return false;
     }
 
-    public static List<Topic> queryAll() {
+    public List<Topic> queryAll() throws SQLException {
         String sql = "select * from topic";
         ResultSet rs = JdbcUtil.select(sql);
         List<Topic> t = new ArrayList<>();
-        try {
-            while (rs.next()) {
-                t.add(new Topic(rs.getInt("topicid"), rs.getString("topicname")));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        while (rs.next()) {
+            t.add(new Topic(rs.getInt("topicid"), rs.getString("topicname")));
         }
-        JdbcUtil.close();
         return t;
     }
 
-    public static boolean delete(String tName) {
+    public boolean delete(String tName) {
         String sql = "delete topic where topicname = ?";
         int i = JdbcUtil.update(sql, tName);
         if (i == 0) {
             JdbcUtil.close();
             return false;
         }
-        JdbcUtil.close();
         return true;
     }
 
-    public static void updateTopicName(String oldName, String newName) {
+    public boolean updateTopicName(String oldName, String newName) {
         String sql = "update topic set topicname = ? where topicname = ?";
-        JdbcUtil.update(sql, newName, oldName);
-        JdbcUtil.close();
+        int i = JdbcUtil.update(sql, newName, oldName);
+        if (i > 0)
+            return true;
+        return false;
     }
 }
