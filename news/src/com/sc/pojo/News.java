@@ -16,9 +16,22 @@ public class News {
     private String content;
     private Date time;
     private Integer t_id;
+
     private Topic topic;//外键连接的Topic
 
     public News() {
+    }
+
+
+    public News(int id, String title, String author, String summary, String content, Date time, Integer t_id, Topic topic) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.summary = summary;
+        this.content = content;
+        this.time = time;
+        this.t_id = t_id;
+        this.topic = topic;
     }
 
     public News(String title, String author, String summary, String content, Date time, Integer t_id) {
@@ -29,6 +42,7 @@ public class News {
         this.time = time;
         this.t_id = t_id;
     }
+
 
     public News(int id, String title, String author, String summary, String content, Date time) {
         this.id = id;
@@ -102,6 +116,7 @@ public class News {
     public void setTime(Date time) {
         this.time = time;
     }
+
 
     @Override
     public boolean equals(Object o) {

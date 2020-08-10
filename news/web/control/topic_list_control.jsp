@@ -19,7 +19,7 @@
     TopicService ts = new TopicServiceImpl();
     List<Topic> lt = ts.queryAll();
     request.setAttribute("list", lt);
-    request.getRequestDispatcher("../newspages/topic_list.jsp").forward(request, response);
+    request.getRequestDispatcher("/newspages/topic_list.jsp").forward(request, response);
 %>
 </body>
 </html>

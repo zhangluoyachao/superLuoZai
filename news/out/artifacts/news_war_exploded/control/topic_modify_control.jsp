@@ -14,8 +14,12 @@
 </head>
 <body>
 <%
+    request.setCharacterEncoding("utf-8");
     TopicService ts = new TopicServiceImpl();
-    String oldName = request.get
+    int oldId = Integer.parseInt(request.getParameter("oldtid"));
+    String newName = request.getParameter("tname");
+    ts.updateTopicName(oldId, newName);
+    response.sendRedirect("topic_list_control.jsp");
 %>
 
 </body>

@@ -32,8 +32,16 @@ public class TopicServiceImpl implements TopicService {
     }
 
     @Override
-    public boolean updateTopicName(String oldName, String newName) {
-        boolean b = td.updateTopicName(oldName, newName);
+    public boolean updateTopicName(int oldId, String newName) {
+        boolean b = td.updateTopicName(oldId, newName);
+        JdbcUtil.close();
+        if (b) return true;
+        return false;
+    }
+
+    @Override
+    public boolean delete(int tid) {
+        boolean b = td.delete(tid);
         JdbcUtil.close();
         if (b) return true;
         return false;

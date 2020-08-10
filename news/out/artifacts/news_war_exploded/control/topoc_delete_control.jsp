@@ -1,4 +1,5 @@
-<%@ page import="com.sc.dao.impl.TopicDaoImpl" %><%--
+<%@ page import="com.sc.service.TopicService" %>
+<%@ page import="com.sc.service.impl.TopicServiceImpl" %><%--
   Created by IntelliJ IDEA.
   User: zhang
   Date: 2020/8/9
@@ -12,7 +13,10 @@
 </head>
 <body>
 <%
-    TopicDaoImpl.delete(request.getParameter("tname"));
+    request.setCharacterEncoding("utf-8");
+    int tid = Integer.parseInt(request.getParameter("tid"));
+    TopicService ts = new TopicServiceImpl();
+    ts.delete(tid);
     response.sendRedirect("topic_list_control.jsp");
 %>
 

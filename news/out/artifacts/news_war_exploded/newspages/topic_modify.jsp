@@ -13,11 +13,13 @@
         return true;
     }
 </script>
+
 <div id="main">
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 修改主题： </h1>
-        <form action="/control/topic_modify_control.jsp" method="post" onsubmit="return check()">
+        <form action="/control/topic_modify_control.jsp?oldtid=${param.oldtid}" method="post"
+              onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" value=""/>

@@ -13,9 +13,10 @@
 </head>
 <body>
 <%
+    request.setCharacterEncoding("utf-8");
     TopicService ts = new TopicServiceImpl();
     ts.insert(request.getParameter("tname"));
-    response.sendRedirect("/newspages/topic_list.jsp");
+    response.sendRedirect("/control/topic_list_control.jsp");
 %>
 </body>
 </html>

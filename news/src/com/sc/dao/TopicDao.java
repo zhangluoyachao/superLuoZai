@@ -10,7 +10,7 @@ public interface TopicDao {
 
     List<Topic> queryAll() throws SQLException;
 
-    boolean delete(String tName);
+    boolean delete(int tName);
 
-    boolean updateTopicName(String oldName, String newName);
+    boolean updateTopicName(int oldId, String newName);
 }

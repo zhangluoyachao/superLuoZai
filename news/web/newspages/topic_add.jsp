@@ -27,14 +27,14 @@
     </div>
 </div>
 <div id="admin_bar">
-    <div id="status">管理员： 登录 &#160;&#160;&#160;&#160; <a href="#">login out</a></div>
+    <div id="status">管理员： ${user.username} &#160;&#160;&#160;&#160; <a href="#">login out</a></div>
     <div id="channel"></div>
 </div>
 <div id="main">
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 添加主题： </h1>
-        <form action="../control/topic_add_control.jsp" method="post" onsubmit="return check()">
+        <form action="/control/topic_add_control.jsp" method="post" onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" id="tname"/>

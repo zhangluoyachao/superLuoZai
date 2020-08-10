@@ -29,9 +29,9 @@
             <c:forEach items="${requestScope.list}" var="t">
                 <li>
                     &#160;&#160;&#160;&#160; ${t.topicName} &#160;&#160;&#160;&#160;
-                    <a href='topic_modify.jsp?oldtname=${t.topicName}'>修改</a>
+                    <a href="/newspages/topic_modify.jsp?oldtid=${t.id}">修改</a>
                     &#160;&#160;&#160;&#160;
-                    <a href='../control/topoc_delete_control.jsp?tname=${t.topicName}'>删除</a>
+                    <a href="/control/topoc_delete_control.jsp?tname=${t.topicName}&tid=${t.id}">删除</a>
                 </li>
             </c:forEach>
         </ul>

@@ -1,10 +1,11 @@
+<%@ page import="com.sc.pojo.Topic" %>
 <%@ page import="com.sc.service.TopicService" %>
 <%@ page import="com.sc.service.impl.TopicServiceImpl" %>
-<%--
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: zhang
-  Date: 2020/8/9
-  Time: 15:56
+  Date: 2020/8/11
+  Time: 0:14
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,13 +15,10 @@
 </head>
 <body>
 <%
-    request.setCharacterEncoding("utf-8");
     TopicService ts = new TopicServiceImpl();
-    int oldId = Integer.parseInt(request.getParameter("oldtid"));
-    String newName = request.getParameter("tname");
-    ts.updateTopicName(oldId, newName);
-    response.sendRedirect("topic_list_control.jsp");
+    List<Topic> list = ts.queryAll();
+    request.setAttribute("list", list);
+    request.getRequestDispatcher("/newspages/news_add.jsp").forward(request, response);
 %>
-
 </body>
 </html>

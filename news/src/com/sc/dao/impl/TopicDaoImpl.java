@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TopicDaoImpl implements TopicDao {
     public boolean insert(String tname) {
-        String sql = "insert into Topic values(id_sql.nextval,?)";
+        String sql = "insert into Topic values(id_seq.nextval,?)";
         int i = JdbcUtil.update(sql, tname);
         if (i > 0) {
             return true;
@@ -29,9 +29,9 @@ public class TopicDaoImpl implements TopicDao {
         return t;
     }
 
-    public boolean delete(String tName) {
-        String sql = "delete topic where topicname = ?";
-        int i = JdbcUtil.update(sql, tName);
+    public boolean delete(int tid) {
+        String sql = "delete topic where topicid = ?";
+        int i = JdbcUtil.update(sql, tid);
         if (i == 0) {
             JdbcUtil.close();
             return false;
@@ -39,9 +39,9 @@ public class TopicDaoImpl implements TopicDao {
         return true;
     }
 
-    public boolean updateTopicName(String oldName, String newName) {
-        String sql = "update topic set topicname = ? where topicname = ?";
-        int i = JdbcUtil.update(sql, newName, oldName);
+    public boolean updateTopicName(int oldid, String newName) {
+        String sql = "update topic set topicname = ? where topicid = ?";
+        int i = JdbcUtil.update(sql, newName, oldid);
         if (i > 0)
             return true;
         return false;

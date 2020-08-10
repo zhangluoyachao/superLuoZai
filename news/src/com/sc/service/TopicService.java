@@ -9,5 +9,7 @@ public interface TopicService {
 
     boolean insert(String topicName);
 
-    boolean updateTopicName(String oldName, String newName);
+    boolean updateTopicName(int oldId, String newName);
+
+    boolean delete(int tid);
 }
