@@ -1,4 +1,4 @@
-package util;
+package com.sc.util;
 
 
 import java.io.IOException;
@@ -37,7 +37,7 @@ public class JdbcUtil {
     static {
         //读取配置文件
         InputStream is = JdbcUtil.class.getClassLoader().
-                getResourceAsStream("jdbc.properties");
+                getResourceAsStream("com/sc/config/jdbc.properties");
         Properties p = new Properties(); //读取对应类型文件的类对象
         try {
             p.load(is); //将读取的数据通过输入流 存入p对象中

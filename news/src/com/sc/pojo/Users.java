@@ -1,4 +1,4 @@
-package pojo;
+package com.sc.pojo;
 
 /**
  * @program: javaee

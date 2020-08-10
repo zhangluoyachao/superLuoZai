@@ -6,21 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbec59a4-71c2-4ee5-9b7f-cd29e0cd36fb" name="Default Changelist" comment="修改new项目">
-      <change afterPath="$PROJECT_DIR$/../news/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cbec59a4-71c2-4ee5-9b7f-cd29e0cd36fb" name="Default Changelist" comment="学习JSTL">
       <change beforePath="$PROJECT_DIR$/../note/JSP/jsp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/jsp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/images/AWOM{1H`][~0B8$))EBSJ(1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/images/image-20200804102047547.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/images/image-20200804102216060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/MVC/MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/MVC/MVC.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JSP/web/day3/JSTL.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/web/day3/JSTL.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP/web/day3/JSTL测试.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSE/note/JAVA高级/0、Objeck类中常用方法/2、clone克隆" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSE/note/JAVA高级/0、Objeck类中常用方法/2、clone克隆" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/JSTL.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/JSTL.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/JSTL测试.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/el.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/el.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,14 +106,16 @@
     <session id="-372718481">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -155,16 +149,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="190" />
-          <entry key="jsp" value="1517" />
+          <entry key="jsp" value="2023" />
           <entry key="sql" value="221" />
-          <entry key="txt" value="11" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="190" />
-          <entry key="JSP" value="1517" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="JSP" value="2023" />
+          <entry key="PLAIN_TEXT" value="18" />
           <entry key="SQL" value="89" />
           <entry key="Scratch" value="132" />
         </counts>
@@ -173,29 +167,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTL.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+            <state relative-caret-position="2926">
+              <caret line="133" column="7" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day3/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="147">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -238,8 +223,8 @@
         <option value="$PROJECT_DIR$/JSP/src/dao/CountPeopleDao.java" />
         <option value="$PROJECT_DIR$/JSP/web/day3/login.jsp" />
         <option value="$PROJECT_DIR$/JSP/web/day3/JSTL测试.jsp" />
-        <option value="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" />
         <option value="$PROJECT_DIR$/JSP/web/day3/JSTL.jsp" />
+        <option value="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" />
       </list>
     </option>
   </component>
@@ -263,9 +248,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="201" />
+    <option name="x" value="221" />
+    <option name="y" value="47" />
     <option name="width" value="1635" />
-    <option name="height" value="1038" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -276,7 +262,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,13 +306,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597031414584" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597041438868" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../news" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -335,7 +321,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -365,7 +351,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.20">
+  <component name="RunManager" selected="JavaScript Debug.JSTLTest.jsp">
     <configuration name="CountPeopleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.CountPeopleDao" />
       <module name="JSP" />
@@ -652,18 +638,27 @@
       <workItem from="1596950985363" duration="2042000" />
       <workItem from="1596962100551" duration="454000" />
       <workItem from="1596962566249" duration="108000" />
-      <workItem from="1597023955944" duration="4581000" />
+      <workItem from="1597023955944" duration="7437000" />
+      <workItem from="1597039659801" duration="1551000" />
+      <workItem from="1597044940463" duration="87000" />
     </task>
+    <task id="LOCAL-00001" summary="学习JSTL">
+      <created>1597031512379</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597031512379</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22823000" />
+    <option name="totallyTimeSpent" value="27317000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="0" width="1308" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="177" y="38" width="1308" height="792" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,7 +668,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.44680852" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4461305" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -681,7 +676,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.30028328" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.31378937" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32855093" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -739,7 +734,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改new项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改new项目" />
+    <MESSAGE value="学习JSTL" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习JSTL" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -989,17 +985,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp">
+    <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTL.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state relative-caret-position="2926">
+          <caret line="133" column="7" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTL.jsp">
+    <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+        <state relative-caret-position="147">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>

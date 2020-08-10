@@ -1,5 +1,5 @@
-<%@ page import="dao.UsersDao" %>
-<%@ page import="pojo.Users" %><%--
+<%@ page import="com.sc.dao.impl.UsersDaoImpl" %>
+<%@ page import="com.sc.pojo.Users" %><%--
   Created by IntelliJ IDEA.
   User: zhang
   Date: 2020/8/9
@@ -18,7 +18,7 @@
     String psw = request.getParameter("upwd");
     Users u = new Users(un, psw);
     session.setAttribute("user", u);
-    if (UsersDao.checkUser(u))
+    if (UsersDaoImpl.checkUser(u))
         response.sendRedirect("topic_list_console.jsp");
     else out.print("<script>alert('账号密码输入错误');location.href='../index.jsp';</script>");
 %>

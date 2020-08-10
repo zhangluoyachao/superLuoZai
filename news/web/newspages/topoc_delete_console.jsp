@@ -1,4 +1,4 @@
-<%@ page import="dao.TopicDao" %><%--
+<%@ page import="com.sc.dao.impl.TopicDaoImpl" %><%--
   Created by IntelliJ IDEA.
   User: zhang
   Date: 2020/8/9
@@ -12,7 +12,7 @@
 </head>
 <body>
 <%
-    TopicDao.delete(request.getParameter("tname"));
+    TopicDaoImpl.delete(request.getParameter("tname"));
     response.sendRedirect("topic_list_console.jsp");
 %>
 

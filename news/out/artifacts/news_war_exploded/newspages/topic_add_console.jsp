@@ -1,5 +1,5 @@
-<%@ page import="dao.TopicDao" %>
-<%@ page import="pojo.Topic" %><%--
+<%@ page import="com.sc.dao.impl.TopicDaoImpl" %>
+<%@ page import="com.sc.pojo.Topic" %><%--
   Created by IntelliJ IDEA.
   User: zhang
   Date: 2020/8/9
@@ -14,7 +14,7 @@
 <body>
 <%
     String tname = request.getParameter("tname");
-    TopicDao.insert(new Topic(tname));
+    TopicDaoImpl.insert(new Topic(tname));
     out.print("<script>alert('添加成功');location.href='admin.jsp';</script>");
 
 %>

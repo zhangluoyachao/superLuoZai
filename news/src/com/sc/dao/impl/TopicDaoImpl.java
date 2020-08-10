@@ -1,14 +1,14 @@
-package dao;
+package com.sc.dao.impl;
 
-import pojo.Topic;
-import util.JdbcUtil;
+import com.sc.pojo.Topic;
+import com.sc.util.JdbcUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TopicDao {
+public class TopicDaoImpl {
     public static void insert(Topic t) {
         String sql = "insert into Topic values(id_sql.nextval,?)";
         JdbcUtil.update(sql, t.getTopicName());

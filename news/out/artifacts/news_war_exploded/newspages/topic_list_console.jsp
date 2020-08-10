@@ -1,5 +1,5 @@
-<%@ page import="dao.TopicDao" %>
-<%@ page import="pojo.Topic" %>
+<%@ page import="com.sc.dao.impl.TopicDaoImpl" %>
+<%@ page import="com.sc.pojo.Topic" %>
 <%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
@@ -15,7 +15,7 @@
 </head>
 <body>
 <%
-    List<Topic> list = TopicDao.queryAll();
+    List<Topic> list = TopicDaoImpl.queryAll();
     request.setAttribute("list", list);
     request.getRequestDispatcher("topic_list.jsp").forward(request, response);
 %>

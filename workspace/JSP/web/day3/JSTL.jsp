@@ -9,6 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title>Title</title>
@@ -120,9 +121,16 @@ type:类型 number 数字 percent百分比 currency货币
 注：先转换类型，再保留小数
 value="0.98854" maxFractionDigits="2" type = "percent"
 ==>98.85
-格式日期
-<fmt:formatDate value="">
+pattern: 可以指定数字格式 一般货币会使用 0表示数字
+如：pattern="$.00 q"
 
-</fmt:formatDate>
+格式日期
+字符串转日期
+<fmt:parseDate value="2009-04-15" pattern="yyyy-mm-dd"/>
+日期转字符串
+<fmt:formatDate value="${date}" pattern="yyyy-mm-dd"/>
+
+函数集 不是标签 结合EL表达式使用
+语法：${fn:函数名}
 </body>
 </html>
