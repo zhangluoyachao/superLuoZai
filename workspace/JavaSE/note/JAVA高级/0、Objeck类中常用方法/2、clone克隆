@@ -4,7 +4,7 @@
                 如果是引用类型，则不会被克隆
 步骤：
     1、被克隆的类实现Cloneable接口，并且实现其clone()方法
-    class TestClone extends Cloneable{
+    class TestClone implement Cloneable{
             private int no;
             @Override
             protected Object clone(){

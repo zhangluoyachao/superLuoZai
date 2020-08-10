@@ -10,9 +10,9 @@ JSP执行过程：JSP底层实现就是Java代码
 
 index.jsp==>index_jsp.java==>index_jsp.class
 
-![image-20200804102047547](../images/image-20200804102047547.png)
+![image-20200804102047547](./images/image-20200804102047547.png)
 
-![image-20200804102216060](../images/image-20200804102216060.png)
+![image-20200804102216060](./images/image-20200804102216060.png)
 
 ## 一、静态内容
 
@@ -433,3 +433,317 @@ Cookie[] coos = re
 
 **总结：Session比Cookie更安全**
 
+
+
+## 十三、Appliaction
+
+appliaction类似于系统的全局变量，一个项目中，一般情况下只会有一个appliaction
+
+所以说可以向application存储数据，数据会在所有用户之间共享，所以说范围会超过session
+
+
+
+setAttribute(String key,Objcet value);
+
+getAttribute(String key);
+
+removeAttribute(String ky);
+
+page request session Appliaction四个对象都拥有上述方法
+
+
+
+## 十四、四大域对象
+
+1. page:表示当前页面，类似于this，存储的数据只在当前页面有效
+
+2. request:在一次请求之中，请求结束，数据失效
+
+3. session:一次会话中，会话结束，数据失效
+
+4. application:一次项目中，项目关闭（关服务器），数据失效
+
+这四种对象被成为 四大作用域
+
+**注：page没有方法，使用pageContext对象调用**
+
+pageContext	可以描述所有的对象，包括四大作用域，可以同时描述四大作用域范围
+
+``` jsp
+pageContext.setAttribute(String key,Object value,int scope);
+scope:
+page	1
+request	2
+session	3
+application	4
+page可以不写，默认page
+可以通过pageContext类中的常量表示
+PageContext.REQUEST_SCOPE
+
+pageContext.setAttribute("abc",100);//page
+pageContext.setAttribute("abc",100,PageContext.REQUEST_SCOPE);//2
+pageContext.setAttribute("abc",100,PageContext.SESSION_SCOPE);//3
+pageContext.setAttribute("abc",100,PageContext.APPLICATION_SCOPE);//4
+
+//获取
+pageContext.getAttribute("abc",PageContext.REQUEST_SCOPE);
+```
+
+**注：获取值时，如果同名参数，按优先级取值，即page优先，application最后**
+
+
+
+pagetContext	include方法 类似include指令，但是会有区别
+
+include指令：等于复制粘贴，将代码全部复制过来再进行编译
+
+include方法：类似于方法调用，先编译代码，然后再将其他页面信息在本页面展示出来
+
+比如：
+
+用include指令，1页面中page存储信息可以被2页面调用
+
+而方法不行	
+
+## 十四、EL表达式
+
+EL表达式：Expression Language 表达式语言，用于替换JSP中脚本的表达式代码（<%=>）
+
+### 1、语法
+
+``` jsp
+${el表达式}
+```
+
+### 2、应用场景
+
+1. **获取四大作用域中的值**
+
+   ${作用域.key}
+
+   ```jsp
+   ${sessionScope.el}
+   ==>
+   session.getAttribute("el")
+   ```
+
+   作用域可以省略，以作用域顺序取值，谁有值取谁，如果都没有，不显示（不为null直接不显示）
+
+   ```jsp
+   ${el}
+   ```
+
+   底层实现就是
+
+   
+
+2. **获取对象的属性值**
+
+   1. 先将对象存入作用域
+   2. 通过调用$.对象.属性名
+
+   ```jsp
+   ${u.id}
+   ```
+
+   **注：底层原理是通过类的get方法获取，如果没有提供get方法就会报运行时异常，属性notfound**
+
+3. **获取请求的参数**
+
+   1. param
+
+      替换getParameter
+
+      ```
+      ${param.key}
+      ==>
+      request.getParameter("key")
+      ```
+
+   2. paravalues
+
+      替换getParameterValues
+
+### 3、运算符
+
+1. . 运算符号：获取对象属性
+
+   ${u.uname}
+
+2. [ ] 运算符：用于根据下标获取数组或集合中的对象
+
+   ${list[0].uname}
+
+3. ==或者eq：判断两值是否相等，返回boolean类型
+
+4. ！=或者ne：不等于
+
+5. \> 或者gt：大于
+
+6. \< 或者lt：小于
+
+7. <= 或者le：小于等于
+
+8. \>= 或者ge：大于等于
+
+9. && 或者 and
+
+10. ||或者or
+
+11. ！或者not
+
+12. 三目运算
+
+13. empty：判断为空 ${empty user}
+
+14. +-*/
+
+
+
+### 4、隐藏对象
+
+1. pageScope：在page作用域内的数据
+
+   requestScope：在request作用域
+
+   sessionScope	applicationScope
+
+2. param：获取request请求参数对象，等价于request.getParameter
+
+   paramValues：获取request请求参数对象（多个），等价于request.getParameterValues
+
+3. header：获取HTTP请求头的信息
+
+4. cookie：获取cookie缓存中的信息
+
+
+
+## 十五、getAttribute和getParamenter区别
+
+
+
+```jsp
+    request.getAttribute("");
+    request.getParameter("");
+```
+
+二者区别
+
+### 1、获取的数据不同
+
+​    getParameter 获取请求的参数 获取的是提交的数据（form表单或者？key=value的get形式）
+​    getAttribute 获取请求作用域的值  获取的是setAttribute中的值
+
+ ###   2、返回值不同
+
+​    getParameter String
+​    getAttribute Object
+
+  ###   3、传递数值也不同
+
+​    getParameter form表单或者get只能传递字符串
+​    getAttribute 可以获取任何形式
+
+
+
+## 十六、JSTL
+
+jsp的标准标签库，可以通过JSTL实现jsp页面动态数据的获取或展示
+
+常跟EL表达式结合使用
+
+使用之前需要导入相关依赖：jstl1.2.jar
+
+### 1、分类
+
+```jsp
+<%@taglib prefix="c" uri="地址" %>
+```
+
+![image-20200807163319546](images/image-20200807163319546.png)
+
+类似于JAVA 导包，IDEA可以自动导
+
+1. 核心标签库：JSTL中的基本标签
+
+   set out remove if choose foreach
+
+   ```jsp
+   <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   ```
+
+   核心标签库地址为：core
+
+   注:引入核心标签库一般前缀写c可以任意
+
+2. 格式化标签库：通过JSTL做数据格式化（日期、数字）
+
+   ```jsp
+   <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+   ```
+
+   
+
+3. 函数标签：JSTL针对于字符处理的一些函数
+
+注：这三种情况任何一种使用之前都需要引入标签库
+
+`<%taglib uri = "地址" prefix = "前缀"%>`
+
+### 2、核心标签库
+
+1. set：赋值
+
+   1. 用于给四大作用域存值 相当于 `作用域.setAttribute(key,value)`
+
+    ```jsp
+   <c:set var="key" value="value" scope="作用域"></c:set>
+    ```
+
+   2. 给对象的属性赋值
+
+   ```jsp
+   <c:set value="值" property="属性名" target="对象"></c:set>
+   ```
+
+   
+
+   **注：**
+
+   * **对象必须在作用域中存在，如果直接写对象名 target="user"则表示一个字符串对象**
+
+   * __要使其表达user对象需要配合EL表达式：target="${user}"__
+
+     
+
+2. remove：删除某一个作用域的值
+
+   ```jsp
+   <c:remove var="one" scope="request"></c:remove>
+   ```
+
+   **注：如果没有scope则表示删除所有作用域中的值**
+
+   ```jsp
+   <c:remove var="one"></c:remove>
+   ```
+
+3. out：向页面输出内容
+
+   1. 输出指定内容，可以固定，可以输出作用域中的内容
+
+      ```jsp
+      <c:out value="" default=""></c:out>
+      ```
+
+      注：当value 为空时，显示默认值
+
+   2. ```jsp
+      <c:out value="" default="" escapeXml="是否渲染"></c:out>
+      ```
+
+      如果值为HTML标签，不会被渲染，需要escapeXml = “y” 才能被渲染成HTML标签
+
+      注：escapeXml可以设置成 y/n yes/no
+
+4. 

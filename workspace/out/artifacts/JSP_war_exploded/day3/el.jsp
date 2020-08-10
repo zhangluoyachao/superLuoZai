@@ -12,10 +12,7 @@
 </head>
 <body>
 <%
-pageContext.setAttribute("el","page");
-session.setAttribute("el","se");
-    BBSUser u = null;
-    session.setAttribute("u",u);
+
 
 %>
 <h1>${u.useID}</h1>
