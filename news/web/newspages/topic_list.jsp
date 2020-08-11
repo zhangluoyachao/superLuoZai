@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>添加主题--管理后台</title>
-    <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+    <link href="${base}/css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="header">
@@ -13,12 +13,13 @@
         欢迎使用新闻管理系统！
     </div>
     <div id="nav">
-        <div id="logo"><img src="../images/logo.jpg" alt="新闻中国"/></div>
-        <div id="a_b01"><img src="../images/a_b01.gif" alt=""/></div>
+        <div id="logo"><img src="${base}/images/logo.jpg" alt="新闻中国"/></div>
+        <div id="a_b01"><img src="${base}/images/a_b01.gif" alt=""/></div>
     </div>
 </div>
 <div id="admin_bar">
-    <div id="status">管理员： 登录 &#160;&#160;&#160;&#160; <a href="newspage/login.jsp?action=loginout">login out</a></div>
+    <div id="status">管理员： ${user.username} &#160;&#160;&#160;&#160; <a href="newspage/login.jsp?action=loginout">login
+        out</a></div>
     <div id="channel"></div>
 </div>
 <div id="main">
@@ -35,9 +36,9 @@
                 <c:forEach items="${list}" var="t">
                     <li>
                         &#160;&#160;&#160;&#160; ${t.topicName} &#160;&#160;&#160;&#160;
-                        <a href="${base}/newspages/topic_modify.jsp?oldtid=${t.id}">修改</a>
+                        <a href="${base}/newspages/topic_modify.jsp?&tid=${t.id}">修改</a>
                         &#160;&#160;&#160;&#160;
-                        <a href="${base}/control/topoc_delete_control.jsp?tname=${t.topicName}&tid=${t.id} "
+                        <a href="${base}/doTopicServlet?pre=delete&tid=${t.id} "
                            onclick='return clickDel()'>删除</a>
                     </li>
                 </c:forEach>

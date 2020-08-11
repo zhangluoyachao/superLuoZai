@@ -41,6 +41,6 @@ public class NewsDaoImpl implements NewsDao {
         }
         JdbcUtil.close();
 
-        return null;
+        return list;
     }
 }

@@ -34,7 +34,7 @@
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 添加主题： </h1>
-        <form action="${base}/control/topic_add_control.jsp" method="post" onsubmit="return check()">
+        <form action="${base}/doTopicServlet?pre=add" method="post" onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" id="tname"/>

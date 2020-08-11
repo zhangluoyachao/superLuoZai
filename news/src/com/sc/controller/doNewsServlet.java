@@ -33,6 +33,6 @@ public class doNewsServlet extends HttpServlet {
         List<News> list = ns.queryAll();
         req.setCharacterEncoding("utf-8");
         req.setAttribute("list", list);
-        req.getRequestDispatcher(req.getContextPath() + "/newspages/admin.jsp").forward(req, resp);
+        req.getRequestDispatcher("/newspages/admin.jsp").forward(req, resp);
     }
 }

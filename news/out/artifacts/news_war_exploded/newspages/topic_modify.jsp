@@ -18,12 +18,11 @@
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 修改主题： </h1>
-        <form action="${base}/control/topic_modify_control.jsp?oldtid=${param.oldtid}" method="post"
-              onsubmit="return check()">
+        <form action="${base}/doTopicServlet?pre=modify" method="post" onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" value=""/>
-                <input name="tid" type="hidden" value="">
+                <input name="tid" type="hidden" value="${param.tid}">
             </p>
             <input name="action" type="hidden" value="addtopic">
             <input type="submit" value="提交" class="opt_sub"/>

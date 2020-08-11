@@ -37,10 +37,9 @@
                 <c:forEach items="${list}" var="t">
                     <li>
                         &#160;&#160;&#160;&#160; ${t.title} &#160;&#160;&#160;&#160;
-                        <a href="${base}/newspages/topic_modify.jsp?oldtid=${t.id}">修改</a>
+                        <a href="#">修改</a>
                         &#160;&#160;&#160;&#160;
-                        <a href="${base}/control/topoc_delete_control.jsp?tname=${t.topicName}&tid=${t.id} "
-                           onclick='return clickDel()'>删除</a>
+                        <a href="#" onclick='return clickDel()'>删除</a>
                     </li>
                 </c:forEach>
             </c:if>

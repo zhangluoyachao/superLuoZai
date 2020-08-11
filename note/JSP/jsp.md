@@ -241,11 +241,11 @@ http状态码：用于表示请求状态
 
 1. **request**：请求，___类型 HttpServletRequest___
 
-   用于代表封装一次请求，一个HTTP请求就是一个request对象
+   用于封装一次请求信息，一个HTTP请求就是一个request对象
 
 2. **response**：响应，___类型 HttpServletResponse___
 
-   用于封装响应信息，一个HTTP请求也会对应一个reponse对象
+   用于封装一次响应信息，一个HTTP请求也会对应一个reponse对象
 
 3. **out**：本质上是一个流（输出字符流），___类型 JSPWriter___
 
