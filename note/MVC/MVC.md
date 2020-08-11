@@ -23,8 +23,122 @@ MVC是一种软件开发模式，将系统分为M 模型层，V视图层 ，C控
 
 
 
-业务逻辑层
+## 业务逻辑层
 
 一个功能，用于调用Dao 实现功能，还会负责事务，处理异常，日志，关闭事务
 
 Dao层只会负责一次sql语句的访问，Dao层不需要关闭资源，不处理异常，抛出即可，因为业务层需要进行事务处理
+
+
+
+## 动态获取项目前缀
+
+1. 动态获取项目前缀，然后前缀保存在application
+
+   但是每次访问都会存值，会浪费资源。一般是一个项目只允许一次的地方：类加载
+
+   ``` jsp
+   String base = application.getContextPath();
+   application.setAttribute("base", base);
+   
+   然后通过EL表达式获取
+   ${base}
+   ```
+
+   
+
+## Servlet
+
+servlet用于实现控制层，是Java服务端用于处理用户请求和响应的java程序，实现和control.jsp几乎一致
+
+### 1、Servlet实现方式
+
+1. 实现一个Servlet接口
+
+   service方法 可以接受任何请求方式
+
+2. 继承一个HttpServlet类   
+
+   常用，适合处理HTTP请求 doXxx()方法可以针对不同请求处理
+
+### 2、配置Servlet
+
+1. 通过配置文件：XML	可扩展标记语言
+
+   ```xml
+   <!--Tomcat服务器负责读取web.xml-->
+       <!--
+           name自定义，但是必须和mapping中相同
+           表示一组标签
+           class 表示那个类,使用类的全类名
+       -->
+       <servlet>
+           <servlet-name>a</servlet-name>
+           <servlet-class>controller.FirstServlet</servlet-class>
+           <!--
+           因为init是默认用户第一次发送请求时执行，就会有以下问题
+           1.第一次请求需要执行初始化，会有延迟
+           2.init中代码报错，只有用户第一次访问才会发现
+   
+           为了解决这些问题，就需要服务器在启动时候就加载好Servlet执行init初始化
+           添加load-on-startup    默认为负数，表示第一次访问时执行
+           可以配置为正数（1-10）设置为服务器启动时加载
+           值越大 启动优先级越小 按1-10顺序执行
+           -->
+           <load-on-startup>1</load-on-startup>
+       </servlet>
+   
+       <servlet-mapping>
+           <servlet-name>a</servlet-name>
+           <!--
+           指定好Servlet请求地址
+           注：前面得  /
+           -->
+           <url-pattern>/aaa</url-pattern>
+       </servlet-mapping>
+   ```
+
+2. 通过注解
+
+   1. 简化版 无load-on-startup
+
+      ``` java
+      @WebServlet("/abc")
+      //等价于 servlet 和Servlet mapping标签
+      //"/abc" 等价于 url-pattern
+      ```
+
+      
+
+   2. 完全体
+
+      ```java
+      @WebServlet(
+              displayName = "user",//servlet名称
+              urlPatterns = "/aaa",//请求地址
+              loadOnStartup = 1   //设置服务器启动时是否执行加载
+      )
+      ```
+
+
+
+### 3、Servlet生命周期
+
+1. 实例化
+
+   1. 默认情况下，第一次访问Servlet
+   2. 如果配置了load-on-startup 则服务器会在启动时候执行实例化
+
+   注：每一个Servlet都是单例，只会实例化一次
+
+2. 初始化
+
+   在实例化的同时，初始化
+
+3. 处理请求
+
+   每发送一次请求，都会执行一次service方法，service方法会根据请求的不同分别调用doXxx();
+
+4. 销毁
+
+   容器关闭（Tomcat服务器关闭），会执行destory方法销毁

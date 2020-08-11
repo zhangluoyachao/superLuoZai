@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>添加主题--管理后台</title>
-    <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+    <link href="${base}/css/admin.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript">
         function check() {
             var tname = document.getElementById("tname");
@@ -22,8 +22,8 @@
 <div id="header">
     <div id="welcome">欢迎使用新闻管理系统！</div>
     <div id="nav">
-        <div id="logo"><img src="../images/logo.jpg" alt="新闻中国"/></div>
-        <div id="a_b01"><img src="../images/a_b01.gif" alt=""/></div>
+        <div id="logo"><img src="${base}/images/logo.jpg" alt="新闻中国"/></div>
+        <div id="a_b01"><img src="${base}/images/a_b01.gif" alt=""/></div>
     </div>
 </div>
 <div id="admin_bar">
@@ -34,7 +34,7 @@
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 添加主题： </h1>
-        <form action="/control/topic_add_control.jsp" method="post" onsubmit="return check()">
+        <form action="${base}/control/topic_add_control.jsp" method="post" onsubmit="return check()">
             <p>
                 <label> 主题名称 </label>
                 <input name="tname" type="text" class="opt_input" id="tname"/>

@@ -1,6 +1,6 @@
 package com.sc.pojo;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * @program: javaee
@@ -16,14 +16,13 @@ public class News {
     private String content;
     private Date time;
     private Integer t_id;
+    private String file;
 
-    private Topic topic;//外键连接的Topic
 
     public News() {
     }
 
-
-    public News(int id, String title, String author, String summary, String content, Date time, Integer t_id, Topic topic) {
+    public News(int id, String title, String author, String summary, String content, Date time, Integer t_id, String file) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -31,26 +30,26 @@ public class News {
         this.content = content;
         this.time = time;
         this.t_id = t_id;
-        this.topic = topic;
+        this.file = file;
     }
 
-    public News(String title, String author, String summary, String content, Date time, Integer t_id) {
+    public News(String title, String author, String summary, String content, Date time, Integer t_id, String file) {
+
         this.title = title;
         this.author = author;
         this.summary = summary;
         this.content = content;
         this.time = time;
         this.t_id = t_id;
+        this.file = file;
     }
 
+    public String getFile() {
+        return file;
+    }
 
-    public News(int id, String title, String author, String summary, String content, Date time) {
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.summary = summary;
-        this.content = content;
-        this.time = time;
+    public void setFile(String file) {
+        this.file = file;
     }
 
     public Integer getT_id() {
@@ -61,13 +60,6 @@ public class News {
         this.t_id = t_id;
     }
 
-    public Topic getTopic() {
-        return topic;
-    }
-
-    public void setTopic(Topic topic) {
-        this.topic = topic;
-    }
 
     public int getId() {
         return id;

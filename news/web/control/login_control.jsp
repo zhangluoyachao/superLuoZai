@@ -15,6 +15,7 @@
 </head>
 <body>
 <%
+    String base = (String) application.getAttribute("base");
     request.setCharacterEncoding("utf-8");
     String un = request.getParameter("uname");
     String pwd = request.getParameter("upwd");
@@ -23,9 +24,9 @@
     Users login = us.login(un, pwd);
     if (login != null) {
         session.setAttribute("user", login);
-        //不应该跳转admin
-        response.sendRedirect("topic_list_control.jsp");
-    } else response.sendRedirect("../index.jsp");
+
+        response.sendRedirect(base + "/control/news_list_control.jsp");
+    } else response.sendRedirect(base + "/newspages/index.jsp");
 %>
 
 </body>

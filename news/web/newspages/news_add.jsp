@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>添加主题--管理后台</title>
-    <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+    <link href="${base}/css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="header">
@@ -16,14 +16,14 @@
     </div>
 </div>
 <div id="admin_bar">
-    <div id="status">管理员： 登录 &#160;&#160;&#160;&#160;<a href="#">login out</a></div>
+    <div id="status">管理员： ${user.username} &#160;&#160;&#160;&#160;<a href="#">login out</a></div>
     <div id="channel"></div>
 </div>
 <div id="main">
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 添加新闻： </h1>
-        <form action="/control/news_add_control.jsp" method="post">
+        <form action="${base}/control/news_add_control.jsp" method="post">
             <p>
                 <label> 主题 </label>
                 <select name="ntid">

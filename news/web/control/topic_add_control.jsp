@@ -16,7 +16,7 @@
     request.setCharacterEncoding("utf-8");
     TopicService ts = new TopicServiceImpl();
     ts.insert(request.getParameter("tname"));
-    response.sendRedirect("/control/topic_list_control.jsp");
+    response.sendRedirect(application.getAttribute("base") + "/control/topic_list_control.jsp");
 %>
 </body>
 </html>

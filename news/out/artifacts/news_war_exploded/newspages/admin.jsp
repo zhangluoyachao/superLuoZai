@@ -7,17 +7,16 @@
     <meta http-equiv="expires" content="0"/>
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
     <meta http-equiv="description" content="This is my page"/>
-    <title>添加主题--管理后台</title>
-    <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+    <title>管理后台</title>
+    <link href="${base}/css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<%
-%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="header">
     <div id="welcome">欢迎使用新闻管理系统！</div>
     <div id="nav">
-        <div id="logo"><img src="../images/logo.jpg" alt="新闻中国"/></div>
-        <div id="a_b01"><img src="../images/a_b01.gif" alt=""/></div>
+        <div id="logo"><img src="${base}/images/logo.jpg" alt="新闻中国"/></div>
+        <div id="a_b01"><img src="${base}/images/a_b01.gif" alt=""/></div>
     </div>
 </div>
 <div id="admin_bar">
@@ -28,15 +27,23 @@
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <script language="javascript">
-            function clickdel() {
+            function clickDel() {
                 return confirm("删除请点击确认");
             }
 
         </script>
         <ul class="classlist">
-            <li>标题标题标题标题<span> 作者：战三 &#160;&#160;&#160;&#160; <a href='#'>修改</a> &#160;&#160;&#160;&#160; <a href='#'
-                                                                                                             onclick='return clickdel()'>删除</a> </span>
-            </li>
+            <c:if test="${list!=null}">
+                <c:forEach items="${list}" var="t">
+                    <li>
+                        &#160;&#160;&#160;&#160; ${t.title} &#160;&#160;&#160;&#160;
+                        <a href="${base}/newspages/topic_modify.jsp?oldtid=${t.id}">修改</a>
+                        &#160;&#160;&#160;&#160;
+                        <a href="${base}/control/topoc_delete_control.jsp?tname=${t.topicName}&tid=${t.id} "
+                           onclick='return clickDel()'>删除</a>
+                    </li>
+                </c:forEach>
+            </c:if>
         </ul>
     </div>
 </div>

@@ -19,7 +19,7 @@
     int oldId = Integer.parseInt(request.getParameter("oldtid"));
     String newName = request.getParameter("tname");
     ts.updateTopicName(oldId, newName);
-    response.sendRedirect("topic_list_control.jsp");
+    response.sendRedirect(application.getAttribute("base") + "/control/topic_list_control.jsp");
 %>
 
 </body>

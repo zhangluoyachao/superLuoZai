@@ -17,7 +17,7 @@
     int tid = Integer.parseInt(request.getParameter("tid"));
     TopicService ts = new TopicServiceImpl();
     ts.delete(tid);
-    response.sendRedirect("topic_list_control.jsp");
+    response.sendRedirect(application.getAttribute("base") + "/control/topic_list_control.jsp");
 %>
 
 
