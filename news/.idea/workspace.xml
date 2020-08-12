@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72bd92b-6457-4d27-8bf7-457b8ccff328" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sc/util/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" afterDir="false" />
@@ -33,28 +31,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/news/com/sc/dao/impl/TopicDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/com/sc/dao/impl/TopicDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/news/com/sc/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/com/sc/service/TopicService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/news/com/sc/service/impl/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/com/sc/service/impl/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/controller/doNewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/controller/doNewsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/controller/doTopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/controller/doTopicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/dao/NewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/dao/NewsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/dao/TopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/dao/TopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/dao/impl/NewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/dao/impl/NewsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/dao/impl/TopicDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/dao/impl/TopicDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/pojo/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/pojo/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/service/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/service/impl/NewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/service/impl/NewsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/service/impl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/control/news_add_control.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/control/news_add_control.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/newspages/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/newspages/console_element/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/console_element/left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/newspages/topic_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/topic_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/JSP/EL+JSTL.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/EL+JSTL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/JSP/jsp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/jsp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/MVC/MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/MVC/MVC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/JSP/web/day3/JSTLTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/web/day3/JSTLTest.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,7 +148,7 @@
     <session id="-1853464195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -235,7 +211,7 @@
           <entry key="java" value="5258" />
           <entry key="jsp" value="3710" />
           <entry key="sql" value="126" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="7" />
           <entry key="xml" value="308" />
         </counts>
       </usages-collector>
@@ -244,7 +220,7 @@
           <entry key="HTML" value="161" />
           <entry key="JAVA" value="5258" />
           <entry key="JSP" value="3710" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="33" />
           <entry key="SQL" value="56" />
           <entry key="Scratch" value="175" />
           <entry key="XML" value="308" />
@@ -341,8 +317,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/NewsDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="50" column="72" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+            <state relative-caret-position="254">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -579,7 +555,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597236491441" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597236523034" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -939,7 +915,7 @@
       <workItem from="1597213601598" duration="6677000" />
       <workItem from="1597220537846" duration="245000" />
       <workItem from="1597221003033" duration="5598000" />
-      <workItem from="1597228466610" duration="7998000" />
+      <workItem from="1597228466610" duration="8064000" />
     </task>
     <task id="LOCAL-00001" summary="学习学习！">
       <created>1597048103175</created>
@@ -955,11 +931,18 @@
       <option name="project" value="LOCAL" />
       <updated>1597048109977</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="学习学习！">
+      <created>1597236554585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597236554585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83148000" />
+    <option name="totallyTimeSpent" value="83214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -975,7 +958,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.28794327" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.38439715" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.38439715" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1339,8 +1322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/NewsDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="50" column="72" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+        <state relative-caret-position="254">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
         </state>
       </provider>
     </entry>
