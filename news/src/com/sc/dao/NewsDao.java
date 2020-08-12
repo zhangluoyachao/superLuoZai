@@ -9,4 +9,8 @@ public interface NewsDao {
     boolean insert(News n);
 
     List<News> queryAll() throws SQLException;
+
+    List<News> getPageNews(Integer pageIndex, Integer pageSize) throws SQLException;
+
+    int getDateCount() throws SQLException;
 }

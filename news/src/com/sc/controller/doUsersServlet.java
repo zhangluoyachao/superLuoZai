@@ -12,21 +12,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class doUsersServlet extends HttpServlet {
-    UsersService us = new UserServiceImpl();
+    private UsersService us = new UserServiceImpl();
+    private String base;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        String base = config.getServletContext().getContextPath();
+        base = config.getServletContext().getContextPath();
         config.getServletContext().setAttribute("base", base);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String pre = req.getParameter("pre");
-        if (pre.equals("login"))
+        if ("login".equals(pre))
             login(req, resp);
-
-
     }
 
     @Override
@@ -44,10 +44,8 @@ public class doUsersServlet extends HttpServlet {
         Users u = us.login(uname, upwd);
         if (u != null) {
             req.getSession().setAttribute("user", u);
-            resp.sendRedirect(req.getContextPath() +
-                    "/doNewsServlet?pre=getNewsList");
-        } else resp.sendRedirect(req.getContextPath() +
-                "/index.jsp");
+            resp.sendRedirect(base + "/doNewsServlet");
+        } else resp.sendRedirect(base + "/index.jsp");
     }
 
 }

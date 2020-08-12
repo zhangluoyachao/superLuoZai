@@ -29,11 +29,10 @@
             function clickDel() {
                 return confirm("删除请点击确认");
             }
-
         </script>
         <ul class="classlist">
-            <c:if test="${list!=null}">
-                <c:forEach items="${list}" var="t">
+            <c:if test="${page.list!=null}">
+                <c:forEach items="${page.list}" var="t">
                     <li>
                         &#160;&#160;&#160;&#160; ${t.topicName} &#160;&#160;&#160;&#160;
                         <a href="${base}/newspages/topic_modify.jsp?&tid=${t.id}">修改</a>
@@ -44,6 +43,43 @@
                 </c:forEach>
             </c:if>
         </ul>
+        <!--触发事件，域改变事件 onchange-->
+        <script type="text/javascript">
+            function change() {
+                var count = document.getElementById("pageSize").value;
+                location.href = "${base}/doTopicServlet?pageSize=" + count;
+            }
+        </script>
+        <select onchange="change()" id="pageSize">
+            <option STYLE="display: none" value="0" selected="selected"></option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+        <a href="${base}/doTopicServlet?pageIndex=1">首页</a>
+        <a href="${base}/doTopicServlet?pageIndex=${page.pageIndex-1}">上一页</a>
+        <a href="${base}/doTopicServlet?pageIndex=${page.pageIndex+1}">下一页</a>
+        <a href="${base}/doTopicServlet?pageIndex=${page.totalPage}">尾页</a>
+        当前页：${page.pageIndex}/总页数：${page.totalPage} 总记录数：${page.totalCount}
+
+        <script type="text/javascript">
+            function onclick1() {
+                var index = document.getElementById("pageIndex").value;
+                if (index <= 0) {
+                    index = 1;
+                }
+                if (index >${page.totalPage}) {
+                    index =  ${page.totalPage};
+                }
+                location.href = "${base}/doTopicServlet?pageIndex=" + index;
+            }
+        </script>
+
+        <input style="width: 15px" id="pageIndex" value=""/>页
+        <input type="submit" name="submit" onclick="onclick1()" value="查询"/>
+
     </div>
 </div>
 <div id="footer">

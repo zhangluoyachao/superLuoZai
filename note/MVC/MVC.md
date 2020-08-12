@@ -75,6 +75,21 @@ servlet用于实现控制层，是Java服务端用于处理用户请求和响应
        <servlet>
            <servlet-name>a</servlet-name>
            <servlet-class>controller.FirstServlet</servlet-class>
+           
+           <!--
+           配置初始化参数，会把参数的值封装到ServletConfig中
+   		在Servlet中直接调用getInitParameter("name")
+   		等同于this.getServletCofig().getInitParameter("name")
+       	-->
+           <init-param>
+           	<param-name>req</param-name>
+               <param-value>utf-8</param-value>
+           </init-param>
+            <init-param>
+           	<param-name>resp</param-name>
+               <param-value>text/html;charset=utf-8</param-value>
+           </init-param>
+           
            <!--
            因为init是默认用户第一次发送请求时执行，就会有以下问题
            1.第一次请求需要执行初始化，会有延迟
@@ -85,7 +100,11 @@ servlet用于实现控制层，是Java服务端用于处理用户请求和响应
            可以配置为正数（1-10）设置为服务器启动时加载
            值越大 启动优先级越小 按1-10顺序执行
            -->
-           <load-on-startup>1</load-on-startup>
+           <load-on-startup>1</load-on-startup>       
+           
+           <!--
+           注：标签执行是有顺序的，name,values,init-param,load
+           -->
        </servlet>
    
        <servlet-mapping>
@@ -124,21 +143,41 @@ servlet用于实现控制层，是Java服务端用于处理用户请求和响应
 
 ### 3、Servlet生命周期
 
-1. 实例化
+1. **实例化**
 
    1. 默认情况下，第一次访问Servlet
    2. 如果配置了load-on-startup 则服务器会在启动时候执行实例化
 
    注：每一个Servlet都是单例，只会实例化一次
 
-2. 初始化
+2. **初始化**
 
    在实例化的同时，初始化
 
-3. 处理请求
+3. **处理请求**
 
    每发送一次请求，都会执行一次service方法，service方法会根据请求的不同分别调用doXxx();
 
-4. 销毁
+4. **销毁**
 
-   容器关闭（Tomcat服务器关闭），会执行destory方法销毁
+   容器关闭（Tomcat服务器关闭），会执行**destory**方法销毁
+
+
+
+
+
+## 分页
+
+分页是将所有数据分段展示给用户的技术，用户每次看到的数据不是全部数据，而是数据的一部分。用户只要通过指定的页码数就可以切换数据。项目中凡是存在列表，都必须写分页
+
+### 1、分页的步骤
+
+1. 分页的sql语句
+
+   oracle rownum分页
+
+   mysql limit关键字
+
+2. 数据初始化 
+
+   准备好分页需要的数据，通过工具类

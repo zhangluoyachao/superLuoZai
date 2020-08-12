@@ -33,8 +33,8 @@
 
         </script>
         <ul class="classlist">
-            <c:if test="${list!=null}">
-                <c:forEach items="${list}" var="t">
+            <c:if test="${p.list!=null}">
+                <c:forEach items="${p.list}" var="t">
                     <li>
                         &#160;&#160;&#160;&#160; ${t.title} &#160;&#160;&#160;&#160;
                         <a href="#">修改</a>
@@ -44,6 +44,21 @@
                 </c:forEach>
             </c:if>
         </ul>
+        <select>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+        <a href="${base}/doNewsServlet?pageIndex=1">首页</a>
+        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}">上一页</a>
+        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}">下一页</a>
+        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}">尾页</a>
+        1 2 3 4
+        [当前页数：${p.pageIndex}/总页数：${p.totalPage}/总条数：${p.totalCount}]
+        <input size="1"/>页
+        <input type="submit" value="查询"/>
+
     </div>
 </div>
 <div id="footer">

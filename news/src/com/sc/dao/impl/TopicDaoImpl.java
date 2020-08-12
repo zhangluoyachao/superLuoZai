@@ -46,4 +46,28 @@ public class TopicDaoImpl implements TopicDao {
             return true;
         return false;
     }
+
+    @Override
+    public Integer queryCount() throws SQLException {
+        String sql = "select count(1) from topic";
+        ResultSet rs = JdbcUtil.select(sql);
+        if (rs.next()) {
+            Integer result = rs.getInt(1);
+            return result;
+        }
+        return 0;
+    }
+
+    @Override
+    public List<Topic> rownumQueryAll(Integer pageIndex, Integer pageSize) throws SQLException {
+        String sql = "select * from (select t.*,rownum r from topic t) where r between ? and ?";
+        ResultSet rs = JdbcUtil.select(sql, (pageIndex - 1) * pageSize + 1, pageSize * pageIndex);
+        List<Topic> list = new ArrayList<>();
+        while (rs.next()) {
+            int topicId = rs.getInt("topicId");
+            String topicName = rs.getString("topicName");
+            list.add(new Topic(topicId, topicName));
+        }
+        return list;
+    }
 }

@@ -317,3 +317,17 @@ jsp的标准标签库，可以通过JSTL实现jsp页面动态数据的获取或�
       ```jsp
       <fmt:formatDate value="${date}" pattern="yyyy-mm-dd"/>
       ```
+
+### 4、函数标签库
+
+```jsp
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+```
+
+包含了一些对字符操作的函数
+
+``` jsp
+<fn:substring(x,start,end)/>
+```
+
+表示对x字符串的截取，并且显示出来

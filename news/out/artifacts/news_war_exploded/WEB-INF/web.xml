@@ -3,14 +3,38 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <!--
+        配置全局参数，针对所有Servlet都可以获取
+        需要通过项目级别的对象获取：application ServletContext
+        ServletContext.getInitParameter("name");
+    -->
+    <context-param>
+        <param-name>req</param-name>
+        <param-value>utf-8</param-value>
+    </context-param>
+    <context-param>
+        <param-name>resp</param-name>
+        <param-value>text/html;charset=utf-8</param-value>
+    </context-param>
+
     <servlet>
-        <servlet-name>login</servlet-name>
+        <servlet-name>doUsersServlet</servlet-name>
         <servlet-class>com.sc.controller.doUsersServlet</servlet-class>
+
+
+        <init-param>
+            <param-name>req</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>resp</param-name>
+            <param-value>text/html;charset=utf-8</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>login</servlet-name>
+        <servlet-name>doUsersServlet</servlet-name>
         <url-pattern>/doUsersServlet</url-pattern>
     </servlet-mapping>
 

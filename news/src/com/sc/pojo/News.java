@@ -14,22 +14,24 @@ public class News {
     private String author;
     private String summary;
     private String content;
-    private Date time;
+
     private Integer t_id;
+    private Date time;
     private String file;
 
 
     public News() {
     }
 
-    public News(int id, String title, String author, String summary, String content, Date time, Integer t_id, String file) {
+
+    public News(int id, String title, String author, String summary, String content, Integer t_id, Date time, String file) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.summary = summary;
         this.content = content;
-        this.time = time;
         this.t_id = t_id;
+        this.time = time;
         this.file = file;
     }
 

@@ -13,4 +13,10 @@ public interface TopicDao {
     boolean delete(int tName);
 
     boolean updateTopicName(int oldId, String newName);
+
+    //查询总条数
+    Integer queryCount() throws SQLException;
+
+    //分页查询
+    List<Topic> rownumQueryAll(Integer pageIndex, Integer pageSize) throws SQLException;
 }
