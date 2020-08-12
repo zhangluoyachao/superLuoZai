@@ -6,7 +6,7 @@
     </root>
     <schema id="2" parent="1" name="ZHANG">
       <ObjectId>48</ObjectId>
-      <IntrospectionTimestamp>2020-08-12.07:14:23</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2020-08-13.07:25:13</IntrospectionTimestamp>
       <CreatedTimestamp>2020-07-26.20:40:10</CreatedTimestamp>
       <ModifiedTimestamp>2020-08-12.07:14:23</ModifiedTimestamp>
       <Current>1</Current>

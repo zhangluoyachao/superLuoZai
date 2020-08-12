@@ -35,14 +35,13 @@ public class News {
         this.file = file;
     }
 
-    public News(String title, String author, String summary, String content, Date time, Integer t_id, String file) {
-
+    public News(String title, String author, String summary, String content, Integer t_id, Date time, String file) {
         this.title = title;
         this.author = author;
         this.summary = summary;
         this.content = content;
-        this.time = time;
         this.t_id = t_id;
+        this.time = time;
         this.file = file;
     }
 

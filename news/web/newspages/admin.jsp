@@ -50,11 +50,24 @@
             <option value="15">15</option>
             <option value="20">20</option>
         </select>
-        <a href="${base}/doNewsServlet?pageIndex=1">首页</a>
-        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}">上一页</a>
-        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}">下一页</a>
-        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}">尾页</a>
-        1 2 3 4
+        <c:if test="${p.pageIndex<=1}">
+            <a href="#">首页</a>
+            <a href="#">上一页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}">下一页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}">尾页</a>
+        </c:if>
+        <c:if test="${p.pageIndex>=p.totalPage}">
+            <a href="${base}/doNewsServlet?pageIndex=1">首页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}">上一页</a>
+            <a href="#">下一页</a>
+            <a href="#">尾页</a>
+        </c:if>
+        <c:if test="${p.pageIndex>1 and p.pageIndex<p.totalPage}">
+            <a href="${base}/doNewsServlet?pageIndex=1">首页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}">上一页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}">下一页</a>
+            <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}">尾页</a>
+        </c:if>
         [当前页数：${p.pageIndex}/总页数：${p.totalPage}/总条数：${p.totalCount}]
         <input size="1"/>页
         <input type="submit" value="查询"/>

@@ -20,16 +20,6 @@
     <servlet>
         <servlet-name>doUsersServlet</servlet-name>
         <servlet-class>com.sc.controller.doUsersServlet</servlet-class>
-
-
-        <init-param>
-            <param-name>req</param-name>
-            <param-value>utf-8</param-value>
-        </init-param>
-        <init-param>
-            <param-name>resp</param-name>
-            <param-value>text/html;charset=utf-8</param-value>
-        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
@@ -38,4 +28,25 @@
         <url-pattern>/doUsersServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>doNewsServlet</servlet-name>
+        <servlet-class>com.sc.controller.doNewsServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>doNewsServlet</servlet-name>
+        <url-pattern>/doNewsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>doTopicServlet</servlet-name>
+        <servlet-class>com.sc.controller.doTopicServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>doTopicServlet</servlet-name>
+        <url-pattern>/doTopicServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

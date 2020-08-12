@@ -24,6 +24,7 @@ public class doUsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         String pre = req.getParameter("pre");
         if ("login".equals(pre))
             login(req, resp);

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" pageEncoding="utf-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -68,11 +69,35 @@
                 </li>
             </ul>
             <ul class="classlist">
-                <li><a href='#'>阿斯蒂芬 </a><span> 213132132</span></li>
-                <li><a href='#'>阿斯蒂芬 </a><span> 213132132</span></li>
-                <li><a href='#'>阿斯蒂芬 </a><span> 213132132</span></li>
+                <c:forEach var="n" items="${p.list}">
+                    <li>
+                            ${n.title}
+                            ${n.author}
+                    </li>
+                </c:forEach>
 
-                <p align="right"> 当前页数:[1/2]<a href="#">下一页</a> <a href="#">末页</a></p>
+                <p align="right"> 当前页数:[${p.pageIndex}/${p.totalPage}]
+                    <c:if test="${p.pageIndex<=1}">
+                        <a href="#">首页</a>
+                        <a href="#">上一页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}&pointPage=index">下一页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}&pointPage=index">尾页</a>
+                    </c:if>
+                    <c:if test="${p.pageIndex>=p.totalPage}">
+                        <a href="${base}/doNewsServlet?pageIndex=1&pointPage=index">首页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}&pointPage=index">上一页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">尾页</a>
+                    </c:if>
+                    <c:if test="${p.pageIndex>1 and p.pageIndex<p.totalPage}">
+                        <a href="${base}/doNewsServlet?pageIndex=1&pointPage=index">首页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}&pointPage=index">上一页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}&pointPage=index">下一页</a>
+                        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}&pointPage=index">尾页</a>
+                    </c:if>
+                    [当前页数：${p.pageIndex}/总页数：${p.totalPage}/总条数：${p.totalCount}]
+                    
+                </p>
             </ul>
         </div>
         <%@include file="index-elements/index_rightbar.html" %>

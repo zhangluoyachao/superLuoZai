@@ -14,7 +14,7 @@ public class NewsDaoImpl implements NewsDao {
     @Override
     public boolean insert(News n) {
         String sql = "insert into news values(id_seq.nextval,?,?,?,?,?,?,?)";
-        int i = JdbcUtil.update(sql, n.getTitle(), n.getAuthor(), n.getSummary(), n.getContent(), n.getTime(), n.getT_id(), n.getFile());
+        int i = JdbcUtil.update(sql, n.getTitle(), n.getAuthor(), n.getSummary(), n.getContent(), n.getT_id(), n.getTime(), n.getFile());
         JdbcUtil.close();
         if (i > 0)
             return true;

@@ -11,8 +11,8 @@
 <div id="header">
     <div id="welcome">欢迎使用新闻管理系统！</div>
     <div id="nav">
-        <div id="logo"><img src="../images/logo.jpg" alt="新闻中国"/></div>
-        <div id="a_b01"><img src="../images/a_b01.gif" alt=""/></div>
+        <div id="logo"><img src="${base}/images/logo.jpg" alt="新闻中国"/></div>
+        <div id="a_b01"><img src="${base}/images/a_b01.gif" alt=""/></div>
     </div>
 </div>
 <div id="admin_bar">
@@ -23,7 +23,7 @@
     <%@include file="console_element/left.html" %>
     <div id="opt_area">
         <h1 id="opt_type"> 添加新闻： </h1>
-        <form action="${base}/control/news_add_control.jsp" method="post">
+        <form action="${base}/doNewsServlet?pre=newsAdd" method="post">
             <p>
                 <label> 主题 </label>
                 <select name="ntid">
