@@ -16,5 +16,6 @@ public interface NewsDao {
 
     int getDateCount() throws SQLException;
 
+    int getDateCount(Integer tid) throws SQLException;
 
 }

@@ -20,7 +20,12 @@
     </div>
 </div>
 <div id="admin_bar">
-    <div id="status">管理员： ${user.username} &#160;&#160;&#160;&#160; <a href="#">login out</a></div>
+    <div id="status">
+        管理员： ${user.username}
+        <a href="#"><img style="width: 20px;height: 20px;" src="${base}/upload/${user.profile}"></a>
+        <a href="#">login out</a>
+
+    </div>
     <div id="channel"></div>
 </div>
 <div id="main">
@@ -75,6 +80,7 @@
     </div>
 </div>
 <div id="footer">
+    <%@include file="console_element/bottom.html" %>
 </div>
 </body>
 </html>

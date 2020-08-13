@@ -90,6 +90,17 @@ public class NewsDaoImpl implements NewsDao {
         ResultSet rs = JdbcUtil.select(sql);
         if (rs.next())
             return rs.getInt(1);
+
+        return 0;
+    }
+
+    @Override
+    public int getDateCount(Integer tid) throws SQLException {
+        String sql = "select count(1) from  news where t_id=?";
+        ResultSet rs = JdbcUtil.select(sql, tid);
+        if (rs.next())
+            return rs.getInt(1);
+
         return 0;
     }
 

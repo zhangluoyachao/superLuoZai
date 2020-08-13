@@ -147,11 +147,11 @@ public class TestReflect {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-        } catch (InstantiationException e) {
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (InstantiationException e) {
             e.printStackTrace();
         }
 

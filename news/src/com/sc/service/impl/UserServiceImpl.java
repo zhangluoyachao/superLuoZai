@@ -22,4 +22,23 @@ public class UserServiceImpl implements UsersService {
         JdbcUtil.close();
         return u;
     }
+
+    @Override
+    public boolean add(Users u) {
+        if (ud.insert(u))
+            return true;
+        return false;
+    }
+
+    @Override
+    public boolean isExist(String un) {
+        boolean b = false;
+        try {
+            b = ud.isExist(un);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        return b;
+    }
 }

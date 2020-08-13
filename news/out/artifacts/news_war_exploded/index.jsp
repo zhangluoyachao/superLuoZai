@@ -30,6 +30,10 @@
             var login_username = document.getElementById("uname");
             login_username.focus();
         }
+
+        function register() {
+            location.href = "${base}/newspages/register.jsp";
+        }
     </script>
 </head>
 
@@ -43,9 +47,13 @@
             <label> 密&#160;&#160;码 </label>
             <input type="password" name="upwd" value="" class="login_input"/>
             <input type="submit" class="login_sub" value="登录"/>
+
             <label id="error"> </label>
-            <img src="${base}/images/friend_logo.gif" alt="Google" id="friend_logo"/>
+
         </form>
+        <input type="submit" class="login_sub" onclick="register()" value="注册"/>
+        <img src="${base}/images/friend_logo.gif" alt="Google" id="friend_logo"/>
+
     </div>
     <div id="nav">
         <div id="logo"><img src="${base}/images/logo.jpg" alt="新闻中国"/></div>
@@ -61,9 +69,9 @@
         <div class="content">
             <ul class="class_date">
                 <li id='class_month'>
-                    <c:forEach var="topic" items="${t}">
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&tid=${topic.id}">
-                            <b>${topic.topicName} </b>
+                    <c:forEach var="to" items="${t}">
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&tid=${to.id}">
+                            <b>${to.topicName} </b>
                         </a>
                     </c:forEach>
                 </li>
@@ -77,24 +85,29 @@
                 </c:forEach>
 
                 <p align="right"> 当前页数:[${p.pageIndex}/${p.totalPage}]
-                    <c:if test="${p.pageIndex<=1}">
-                        <a href="#">首页</a>
-                        <a href="#">上一页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex+1}">下一页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.totalPage}">尾页</a>
-                    </c:if>
-                    <c:if test="${p.pageIndex>=p.totalPage}">
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=1">首页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex-1}">上一页</a>
-                        <a href="#">下一页</a>
-                        <a href="#">尾页</a>
-                    </c:if>
-                    <c:if test="${p.pageIndex>1 and p.pageIndex<p.totalPage}">
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=1">首页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex-1}">上一页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex+1}">下一页</a>
-                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.totalPage}">尾页</a>
-                    </c:if>
+                    <c:choose>
+                        <c:when test="${p.pageIndex<=1}">
+                            <a href="#">首页</a>
+                            <a href="#">上一页</a>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=1&tid=${t.id}">首页</a>
+                            <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex-1}&tid=${t.id}">上一页</a>
+                        </c:otherwise>
+                    </c:choose>
+
+                    <c:choose>
+                        <c:when test="${p.pageIndex>=p.totalPage}">
+                            <a href="#">下一页</a>
+                            <a href="#">尾页</a>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex+1}&tid=${t.id}">下一页</a>
+                            <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.totalPage}&tid=${t.id}">尾页</a>
+                        </c:otherwise>
+                    </c:choose>
+
+
                     [当前页数：${p.pageIndex}/总页数：${p.totalPage}/总条数：${p.totalCount}]
 
                 </p>

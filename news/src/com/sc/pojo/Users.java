@@ -10,6 +10,7 @@ public class Users {
     private int id;
     private String username;
     private String password;
+    private String profile;
 
     public Users(int id, String username, String password) {
         this.id = id;
@@ -20,6 +21,27 @@ public class Users {
     public Users(String username, String password) {
         this.username = username;
         this.password = password;
+    }
+
+    public Users(int id, String username, String password, String profile) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.profile = profile;
+    }
+
+    public Users(String username, String password, String profile) {
+        this.username = username;
+        this.password = password;
+        this.profile = profile;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 
     public int getId() {

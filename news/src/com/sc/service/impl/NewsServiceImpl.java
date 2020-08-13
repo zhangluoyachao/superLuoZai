@@ -67,7 +67,7 @@ public class NewsServiceImpl implements NewsService {
         page.setPageSize(pageSize);
         Integer totalCount = null;
         try {
-            totalCount = nd.getDateCount();
+            totalCount = nd.getDateCount(tid);
         } catch (SQLException e) {
             e.printStackTrace();
         }
