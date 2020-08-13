@@ -72,4 +72,41 @@ public class TopicServiceImpl implements TopicService {
         page.setList(list);
         return page;
     }
+
+    @Override
+    public Page<Topic> getTopicPage(Topic tid, Integer pageIndex, Integer pageSize) {
+        Page<Topic> page = new Page<>();
+        Integer totalCount = null;
+        List<Topic> list = null;
+        try {
+            totalCount = td.queryCount();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        page.setPageSize(pageSize);
+        page.setTotalCount(totalCount);
+        page.setPageIndex(pageIndex);
+
+        try {
+            list = td.rownumQueryAll(pageIndex, pageSize);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        page.setList(list);
+        return page;
+    }
+
+    @Override
+    public List<Topic> getForIndex(Integer start, Integer end) {
+        List<Topic> result = null;
+        try {
+            result = td.queryByIndex(start, end);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        return result;
+    }
 }

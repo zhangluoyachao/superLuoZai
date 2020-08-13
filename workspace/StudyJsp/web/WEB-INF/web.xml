@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--Tomcat服务器负责读取web.xml-->
+    <!--
+        name自定义，但是必须和mapping中相同
+        表示一组标签
+        class 表示那个类,使用类的全类名
+    -->
+    <servlet>
+
+        <servlet-name>a</servlet-name>
+        <servlet-class>controller.FirstServlet</servlet-class>
+        <!--
+        因为init是默认用户第一次发送请求时执行，就会有以下问题
+        1.第一次请求需要执行初始化，会有延迟
+        2.init中代码报错，只有用户第一次访问才会发现
+
+        为了解决这些问题，就需要服务器在启动时候就加载好Servlet执行init初始化
+        添加load-on-startup    默认为负数，表示第一次访问时执行
+        可以配置为正数（1-10）设置为服务器启动时加载
+        值越大 启动优先级越小 按1-10顺序执行
+        -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>a</servlet-name>
+        <!--
+        指定好Servlet请求地址
+        注：前面得  /
+        -->
+        <url-pattern>/aaa</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -2,6 +2,9 @@
 <%@ page language="java" pageEncoding="utf-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+<c:if test="${t==null}">
+    <jsp:forward page="/doNewsServlet?pre=showNewsByTopic"/>
+</c:if>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -58,14 +61,11 @@
         <div class="content">
             <ul class="class_date">
                 <li id='class_month'>
-                    <a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a>
-                    <a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a><a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a><a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a><a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a><a href=""><b>国内 </b></a>
-                    <a href=""><b> 国外</b></a>
+                    <c:forEach var="topic" items="${t}">
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&tid=${topic.id}">
+                            <b>${topic.topicName} </b>
+                        </a>
+                    </c:forEach>
                 </li>
             </ul>
             <ul class="classlist">
@@ -80,20 +80,20 @@
                     <c:if test="${p.pageIndex<=1}">
                         <a href="#">首页</a>
                         <a href="#">上一页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}&pointPage=index">下一页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}&pointPage=index">尾页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex+1}">下一页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.totalPage}">尾页</a>
                     </c:if>
                     <c:if test="${p.pageIndex>=p.totalPage}">
-                        <a href="${base}/doNewsServlet?pageIndex=1&pointPage=index">首页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}&pointPage=index">上一页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=1">首页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex-1}">上一页</a>
                         <a href="#">下一页</a>
                         <a href="#">尾页</a>
                     </c:if>
                     <c:if test="${p.pageIndex>1 and p.pageIndex<p.totalPage}">
-                        <a href="${base}/doNewsServlet?pageIndex=1&pointPage=index">首页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex-1}&pointPage=index">上一页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.pageIndex+1}&pointPage=index">下一页</a>
-                        <a href="${base}/doNewsServlet?pageIndex=${p.totalPage}&pointPage=index">尾页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=1">首页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex-1}">上一页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.pageIndex+1}">下一页</a>
+                        <a href="${base}/doNewsServlet?pre=showNewsByTopic&pageIndex=${p.totalPage}">尾页</a>
                     </c:if>
                     [当前页数：${p.pageIndex}/总页数：${p.totalPage}/总条数：${p.totalCount}]
 

@@ -10,9 +10,8 @@
         class 表示那个类,使用类的全类名
     -->
     <servlet>
-
         <servlet-name>a</servlet-name>
-        <servlet-class>controller.FirstServlet</servlet-class>
+        <servlet-class>controller.UserServlet</servlet-class>
         <!--
         因为init是默认用户第一次发送请求时执行，就会有以下问题
         1.第一次请求需要执行初始化，会有延迟
@@ -33,5 +32,13 @@
         注：前面得  /
         -->
         <url-pattern>/aaa</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>up</servlet-name>
+        <servlet-class>controller.UpDownServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>up</servlet-name>
+        <url-pattern>/up</url-pattern>
     </servlet-mapping>
 </web-app>

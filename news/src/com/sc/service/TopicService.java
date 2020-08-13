@@ -15,4 +15,10 @@ public interface TopicService {
     boolean delete(int tid);
 
     Page<Topic> getTopicPage(Integer pageIndex, Integer pageSize);
+
+    Page<Topic> getTopicPage(Topic tid, Integer pageIndex, Integer pageSize);
+
+    List<Topic> getForIndex(Integer start, Integer end);
+
+
 }

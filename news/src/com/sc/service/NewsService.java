@@ -11,4 +11,6 @@ public interface NewsService {
     List<News> queryAll();
 
     Page<News> getPageNews(Integer pageIndex, Integer pageSize);
+
+    Page<News> getPageNews(Integer tid, Integer pageIndex, Integer pageSize);
 }

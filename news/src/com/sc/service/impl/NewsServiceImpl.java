@@ -59,4 +59,30 @@ public class NewsServiceImpl implements NewsService {
 
         return page;
     }
+
+    @Override
+    public Page<News> getPageNews(Integer tid, Integer pageIndex, Integer pageSize) {
+        Page<News> page = new Page<>();
+        page.setPageIndex(pageIndex);
+        page.setPageSize(pageSize);
+        Integer totalCount = null;
+        try {
+            totalCount = nd.getDateCount();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        page.setTotalCount(totalCount);
+
+        List<News> list = null;
+        try {
+            list = nd.getPageNews(tid, pageIndex, pageSize);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcUtil.close();
+        page.setList(list);
+
+        return page;
+    }
 }

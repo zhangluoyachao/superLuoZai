@@ -19,4 +19,6 @@ public interface TopicDao {
 
     //分页查询
     List<Topic> rownumQueryAll(Integer pageIndex, Integer pageSize) throws SQLException;
+
+    List<Topic> queryByIndex(Integer start, Integer end) throws SQLException;
 }

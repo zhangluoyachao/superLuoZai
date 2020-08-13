@@ -70,4 +70,18 @@ public class TopicDaoImpl implements TopicDao {
         }
         return list;
     }
+
+    @Override
+    public List<Topic> queryByIndex(Integer start, Integer end) throws SQLException {
+        String sql = "select * from (select t.*,rownum r from topic t) where r between ? and ?";
+        ResultSet rs = JdbcUtil.select(sql, start, end);
+        List<Topic> list = new ArrayList<>();
+        while (rs.next()) {
+            int topicId = rs.getInt("topicId");
+            String topicName = rs.getString("topicName");
+            list.add(new Topic(topicId, topicName));
+        }
+        return list;
+    }
 }
+

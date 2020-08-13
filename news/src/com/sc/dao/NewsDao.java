@@ -12,5 +12,9 @@ public interface NewsDao {
 
     List<News> getPageNews(Integer pageIndex, Integer pageSize) throws SQLException;
 
+    List<News> getPageNews(Integer tid, Integer pageIndex, Integer pageSize) throws SQLException;
+
     int getDateCount() throws SQLException;
+
+
 }

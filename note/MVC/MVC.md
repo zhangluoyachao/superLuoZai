@@ -181,3 +181,174 @@ servlet用于实现控制层，是Java服务端用于处理用户请求和响应
 2. 数据初始化 
 
    准备好分页需要的数据，通过工具类
+
+
+
+
+
+## 文件的上传下载
+
+上传文件 上传头像 通过Java将本地文件上传服务器
+
+### 1、上传文件的前提：
+
+1. 请求方式必须是post
+
+2. 传值方式需要改变
+
+   form表单中的enctype属性默认
+
+   ```js
+   enctype="application/x-www-form-urlencoded"
+   ```
+
+   表示数据以字符串形式传值提交到服务器
+
+   
+
+   需要修改成：
+
+   ```js
+   enctype="multipart/form-data"
+   ```
+
+   表示数据通过附件形式提交到服务器
+
+   
+
+3. 在Servlet层中要实现上传下载
+
+   实现上传下载需要加上注解：**@MultipartConfig**
+
+   **注：对@MultipartConfig标注的说明。**
+
+   @MultipartConfig标注有以下的属性可用。
+
+   1. fileSizeThreshold:整数值设置，默认值为0，若上传文件的大小超过了这个值，就会先写入缓存文件。
+
+   2. location:字符串设置，默认值为空字符串。如果设置这个属性，缓存文件就是写到指定目录
+
+   3. maxFileSize:限制文件上传大小。默认值为-1L，表示不限制大小。
+
+   4. maxRequestSize:限制multipart/form-data请求格式，默认值为-1L，表示不限制个数。
+
+   
+
+### 2、实现上传图片的同时显示图片
+
+```jsp
+<form action="/up?pre=upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="myFile" onchange="showImg(this)">
+    <img src="" id="img">
+    <input type="submit">
+</form>
+
+<script type="text/javascript">
+    function showImg(thisObject) {
+        //获取图片对象
+        var imgFile = thisObject.files[0];
+        //通过图片对象获取地址
+        var url = window.URL.createObjectURL(imgFile);
+        //把地址给Src赋值
+        //setAttribute修改属性值
+        document.getElementById("img").setAttribute("src", url);
+    }
+</script>
+```
+
+
+
+### 3、Servlet中实现上传功能
+
+1. 获取文件对象
+
+   1. 通过请求获取对应文件对象
+
+   ```java
+   Part imgFile = req.getPart("myFile");
+   //类似于req.getParameter
+   //Part是一个连接
+   ```
+
+   2. 获取文件的文件名
+
+   ```java
+   //获取文件名
+   String fileName = imgFile.getSubmittedFileName();
+   //该方法只能TOMCAT1.8以上才能使用
+   
+   //获取文件后缀
+   String suffix = fileName.substring(fileName.lastIndexOf("."));
+   
+   //创建新的文件名
+   String newFileName = UUID.randomUUID().toString() + suffix;
+   ```
+
+2. 保存到项目路径
+
+   1. 获取文件保存地址的真实路径
+
+   ```java
+   //1.获取服务器的真实路径
+   String path = req.getServletContext().getRealPath("/upload");
+   //自动在后面+/upload
+   ```
+
+   2. 获取文件写入的文件地址
+
+   ```java
+   //2.获取IO流需要写入的路径
+   String filePath = path + File.separator + newFileName;
+   //File.separator为自动生成 斜杠/ 因为不同环境斜杠可能不同
+   ```
+
+   **注：因为不同系统的斜杠是不同的，所以说需要自动获取，通过File文件的separator属性**
+
+   3. 通过IO流写入
+
+   ```java
+   //三.通过IO流写入
+   //Part提供了一个写入方法write 调用就完事了
+   //Part本身就是一个连接
+   File f = new File(filePath);
+   if (!f.exists()) {
+       f.mkdirs();
+   }
+   imgFile.write(filePath);
+   ```
+
+   **注：Part详解：https://www.cnblogs.com/sunyongxing/articles/2622891.html**
+
+### 4、Servlet中实现下载功能
+
+1. 通过请求传递的文件名获取文件绝对路径
+
+```java
+//获取文件名
+String fileName = req.getParameter("fileName");
+//获取绝对路径
+String filePath = req.getServletContext().getRealPath("/upload") + File.separator + fileName;
+```
+
+2. 设置响应头部信息
+
+```java
+// resp.setHeader(内容意向"content-disposition","attachment;filename=" + fileName);
+//                                       指定附件形式下载，并且指定下载后的名称
+resp.setHeader("content-disposition", "attachment;filename=" + fileName);
+```
+
+3. 通过IO流传输
+
+```java
+ServletOutputStream sos = resp.getOutputStream();
+FileInputStream fis = new FileInputStream(filePath);
+byte[] bytes = new byte[1024];
+Integer length;
+while ((length = fis.read(bytes)) != -1) {
+    sos.write(bytes, 0, length);
+}
+fis.close();
+sos.close();
+```
+

@@ -7,44 +7,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbec59a4-71c2-4ee5-9b7f-cd29e0cd36fb" name="Default Changelist" comment="学习JSTL">
-      <change afterPath="$PROJECT_DIR$/../news/src/com/sc/util/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSP/src/controller/UpDownServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSP/web/day6/showFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSP/web/day6/testFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/JSP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/StudyJsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/controller/FirstServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/dao/CountPeopleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/dao/EmpDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/dao/Tb_userDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/src/util/JdbcUtil2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/WEB-INF/lib/ojdbc6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/HomeWork/Test1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/HomeWork/Test2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/HomeWork/Test3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/HomeWork/Test3_control.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/HomeWork/Test3_show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/Test4.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/foot.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/login_control.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/test1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day1/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/Test1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/Test1_2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/User_delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/login_control.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day2/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/JSTL.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/JSTLTest.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/count.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/el.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/pageOne.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/pageTwo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day3/show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day5/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day5/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/day6/testFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyJsp/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/900635f7-8c22-47f1-976f-e615104b36df.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/900635f7-8c22-47f1-976f-e615104b36df/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/dao/impl/TopicDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/dao/impl/TopicDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/service/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/service/impl/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/service/impl/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/control/news_add_control.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/control/news_add_control.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/console_element/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/console_element/left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/topic_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/topic_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doNewsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doNewsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doTopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doTopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/dao/impl/TopicDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/dao/impl/TopicDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/service/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/service/impl/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/service/impl/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doNewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doNewsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doTopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doTopicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/dao/TopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/dao/TopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/dao/impl/TopicDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/dao/impl/TopicDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/service/impl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/control/news_add_control.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/control/news_add_control.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/newspages/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/newspages/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/newspages/console_element/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/newspages/console_element/left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/newspages/topic_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/newspages/topic_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/JSP/EL+JSTL.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/EL+JSTL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/JSP/jsp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/jsp.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../note/MVC/MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/MVC/MVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/NEWS_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBS/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BBS/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSP/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/src/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/JSTLTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/day3/JSTLTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JSP/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSP/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/dao/NewsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/dao/TopicDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/dao/UsersDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/pojo/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/pojo/Topic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/pojo/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NEWS/util/JdbcUtil2.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,15 +181,18 @@
     <session id="-372718481">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -154,7 +200,7 @@
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -163,48 +209,50 @@
           <entry key="NEWS" value="2" />
           <entry key="TESTROW_ID_SEQ" value="1" />
           <entry key="USERS" value="1" />
-          <entry key="class" value="1" />
+          <entry key="class" value="3" />
           <entry key="html" value="3" />
-          <entry key="java" value="35" />
-          <entry key="jsp" value="53" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="48" />
+          <entry key="jsp" value="59" />
           <entry key="problem" value="1" />
           <entry key="properties" value="3" />
           <entry key="sql" value="3" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="3" />
           <entry key="Database Element" value="3" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="35" />
-          <entry key="JSP" value="53" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="48" />
+          <entry key="JSP" value="59" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="java" value="1299" />
-          <entry key="jsp" value="2137" />
-          <entry key="sql" value="221" />
+          <entry key="java" value="2468" />
+          <entry key="jsp" value="2899" />
+          <entry key="sql" value="230" />
           <entry key="txt" value="18" />
-          <entry key="xml" value="526" />
+          <entry key="xml" value="560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1299" />
-          <entry key="JSP" value="2137" />
+          <entry key="JAVA" value="2468" />
+          <entry key="JSP" value="2899" />
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="SQL" value="89" />
+          <entry key="SQL" value="98" />
           <entry key="Scratch" value="132" />
-          <entry key="XML" value="526" />
+          <entry key="XML" value="560" />
         </counts>
       </usages-collector>
     </session>
@@ -214,29 +262,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JSP/src/controller/FirstServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="154">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTL.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2398">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -244,8 +274,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JSP/src/controller/UserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="220">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSP/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSP/web/day6/testFile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JSP/src/controller/UpDownServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,33 +311,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day2/login_control.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day2/login.jsp">
+        <entry file="jar://D:/apache-tomcat-8.5.20/lib/servlet-api.jar!/javax/servlet/http/HttpServletResponseWrapper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="902">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/day5/login.jsp">
+        <entry file="file://$PROJECT_DIR$/JSP/web/day6/showFile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSP/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="484">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -290,8 +333,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -327,10 +370,14 @@
         <option value="$PROJECT_DIR$/JSP/web/day5/admin.jsp" />
         <option value="$PROJECT_DIR$/JSP/web/day5/login.jsp" />
         <option value="$PROJECT_DIR$/JSP/src/controller/FirstServlet.java" />
-        <option value="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/JSP/src/controller/UserServlet.java" />
         <option value="$PROJECT_DIR$/JSP/web/day3/JSTL.jsp" />
         <option value="$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp" />
+        <option value="$PROJECT_DIR$/BBS/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/JSP/src/controller/UserServlet.java" />
+        <option value="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/JSP/web/day6/showFile.jsp" />
+        <option value="$PROJECT_DIR$/JSP/web/day6/testFile.jsp" />
+        <option value="$PROJECT_DIR$/JSP/src/controller/UpDownServlet.java" />
       </list>
     </option>
   </component>
@@ -353,11 +400,28 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="45" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="80" />
+    <option name="y" value="30" />
     <option name="width" value="1635" />
-    <option name="height" value="990" />
+    <option name="height" value="955" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>HTML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>HTML</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -367,53 +431,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="day5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -422,16 +445,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597137299903" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597317173923" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../news" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -439,7 +459,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -450,11 +470,11 @@
       <recent name="D:\workspace\JSP\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\superLuoZai\superLuoZai\workspace\JSP\web\day6" />
+      <recent name="D:\superLuoZai\superLuoZai\workspace\StudyJsp" />
       <recent name="D:\superLuoZai\superLuoZai\workspace\NEWS\web" />
       <recent name="D:\superLuoZai\superLuoZai\workspace\NEWS\src" />
       <recent name="D:\superLuoZai\superLuoZai\workspace\NEWS\.idea" />
-      <recent name="D:\superLuoZai\superLuoZai\workspace\NEWS\web\WEB-INF\classes" />
-      <recent name="D:\superLuoZai\superLuoZai\workspace\NEWS\web\WEB-INF\llib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -559,7 +579,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8858/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -635,17 +654,17 @@
         </option>
       </method>
     </configuration>
-    <configuration name="login.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
+    <configuration name="showFile.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/day6/showFile.jsp" />
       <deployment>
-        <artifact name="BBS:war exploded">
+        <artifact name="JSP:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(1)_workspace" />
+        <option name="BASE_DIRECTORY_NAME" value="showFile_jsp_workspace" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -670,12 +689,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="BBS:war exploded" />
+          <artifact name="JSP:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/day2/login.jsp" />
+    <configuration name="testFile.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/day6/testFile.jsp" />
       <deployment>
         <artifact name="JSP:war exploded">
           <settings>
@@ -684,7 +703,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_workspace" />
+        <option name="BASE_DIRECTORY_NAME" value="testFile_jsp_workspace" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -717,17 +736,17 @@
       <item itemvalue="Tomcat Server.Tomcat 8.5.20" />
       <item itemvalue="Application.CountPeopleDao" />
       <item itemvalue="JavaScript Debug.JSTLTest.jsp" />
-      <item itemvalue="Tomcat Server.login.jsp" />
-      <item itemvalue="Tomcat Server.login.jsp (1)" />
       <item itemvalue="Tomcat Server.JSTL测试.jsp" />
+      <item itemvalue="Tomcat Server.testFile.jsp" />
+      <item itemvalue="Tomcat Server.showFile.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.showFile.jsp" />
+        <item itemvalue="Tomcat Server.testFile.jsp" />
         <item itemvalue="JavaScript Debug.JSTLTest.jsp" />
         <item itemvalue="Tomcat Server.JSTL测试.jsp" />
         <item itemvalue="Application.CountPeopleDao" />
-        <item itemvalue="Tomcat Server.login.jsp (1)" />
-        <item itemvalue="Tomcat Server.login.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -770,6 +789,13 @@
       <workItem from="1597196319212" duration="1276000" />
       <workItem from="1597220526804" duration="256000" />
       <workItem from="1597220984973" duration="21000" />
+      <workItem from="1597299138360" duration="2314000" />
+      <workItem from="1597301953454" duration="764000" />
+      <workItem from="1597304896514" duration="673000" />
+      <workItem from="1597305654155" duration="156000" />
+      <workItem from="1597305862791" duration="8720000" />
+      <workItem from="1597317233640" duration="96000" />
+      <workItem from="1597317438485" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="学习JSTL">
       <created>1597031512379</created>
@@ -782,13 +808,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41326000" />
+    <option name="totallyTimeSpent" value="54081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="36" width="1308" height="792" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3496" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -798,7 +823,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34751773" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.8680445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -806,13 +831,13 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.30028328" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.31378937" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32855093" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32765958" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="1" weight="0.11394102" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.19571045" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.249833" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -872,63 +897,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://d8bdc90d-d22f-42a0-8f35-791012ca5455/schema/ZHANG/table/NEWS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8bdc90d-d22f-42a0-8f35-791012ca5455/console.sql" />
-    <entry file="file://$PROJECT_DIR$/news/web/newspages/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NEWS/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/news/web/newspages/login_console.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day2/Test1.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day1/show.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day1/test1.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day1/login_control.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day1/Test4.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/web/newspages/topic_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="132" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day1/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day2/User_delete.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day2/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/day2/show.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/JSP/web/day3/el.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1053,13 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/dao/CountPeopleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9328">
@@ -1071,13 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1109,30 +1063,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/controller/FirstServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTL.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2398">
           <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/controller/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,17 +1087,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JSP/web/day3/JSTLTest.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="49" column="8" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/pojo/Emp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/dao/CountPeopleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/dao/EmpDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/dao/Tb_userDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudyJsp/src/controller/FirstServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudyJsp/src/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBS/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBS/BBS.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/apache-tomcat-8.5.20/lib/servlet-api.jar!/javax/servlet/http/HttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/controller/FirstServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/web/day6/testFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-tomcat-8.5.20/lib/servlet-api.jar!/javax/servlet/http/HttpServletResponseWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/web/day6/showFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSP/src/controller/UpDownServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,7 +1285,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JSP:war exploded</last-edited>
+          <last-edited>BBS:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1229,7 +1298,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (JSP)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1264,7 +1333,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>NEWS</last-edited>
+          <last-edited>Web|JSP</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
