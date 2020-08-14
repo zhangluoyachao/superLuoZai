@@ -29,8 +29,7 @@ public class doUsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("utf-8");
-        resp.setContentType("text/html;charset=utf-8");
+
         String pre = req.getParameter("pre");
         if ("login".equals(pre))
             login(req, resp);
@@ -64,7 +63,7 @@ public class doUsersServlet extends HttpServlet {
 
         if (us.isExist(un)) {
             PrintWriter out = resp.getWriter();
-            out.print("<script>alert('用户名重复！请重新输入！');location.href='" + base + "/newspages/register.jsp';</script>");
+            out.print("<script>alert('用户名重复！请重新输入！');location.href='" + base + "/register.jsp';</script>");
             out.close();
         } else {
             //文件保存

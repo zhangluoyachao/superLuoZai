@@ -19,7 +19,7 @@ public class doTopicServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("utf-8");
+
         base = req.getContextPath();
         String pre = req.getParameter("pre");
         if (pre == null)

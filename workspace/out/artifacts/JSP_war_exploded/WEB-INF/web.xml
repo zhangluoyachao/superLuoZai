@@ -41,4 +41,25 @@
         <servlet-name>up</servlet-name>
         <url-pattern>/up</url-pattern>
     </servlet-mapping>
+
+
+    <!--
+        同Servlet
+    -->
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>filter.EncodingFilter</filter-class>
+    </filter>
+
+    <!--
+        url：过滤地址
+        如果是所有都需要过滤 /*
+        /*表示所有请求都会经过过滤器
+        请求：服务器中的所有资源 Servlet jsp css 图片等
+    -->
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/up</url-pattern>
+
+    </filter-mapping>
 </web-app>

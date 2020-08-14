@@ -49,4 +49,60 @@
         <servlet-name>doTopicServlet</servlet-name>
         <url-pattern>/doTopicServlet</url-pattern>
     </servlet-mapping>
+
+
+    <!--
+       同Servlet
+   -->
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>com.sc.filter.EncodingFilter</filter-class>
+
+
+        <!--
+            初始化参数
+            会封装到filterConfig对象中
+        -->
+        <init-param>
+            <param-name>req</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>resp</param-name>
+            <param-value>text/html;charset=utf-8</param-value>
+        </init-param>
+    </filter>
+
+    <!--
+        url：过滤地址
+        如果是所有都需要过滤 /*
+        /*表示所有请求都会经过过滤器
+        请求：服务器中的所有资源 Servlet jsp css 图片等
+
+        /doXXX 表示对doXXX请求都会走过滤器
+    -->
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>session</filter-name>
+        <filter-class>com.sc.filter.sessionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <!--
+            表示newspages包下的所有文件都过滤
+        -->
+        <filter-name>session</filter-name>
+        <url-pattern>/newspages/*</url-pattern>
+    </filter-mapping>
+
+    <!--
+        过滤器可以配置多个 如果有多个要按照一定顺序过滤
+        过滤顺序是按照配置文件中 filter-mapping顺序来的
+
+        通过注解不好调整顺序
+    -->
 </web-app>

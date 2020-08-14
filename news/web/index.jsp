@@ -32,7 +32,7 @@
         }
 
         function register() {
-            location.href = "${base}/newspages/register.jsp";
+            location.href = ${base}+"/register.jsp";
         }
     </script>
 </head>
