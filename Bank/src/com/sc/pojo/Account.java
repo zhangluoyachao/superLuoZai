@@ -17,6 +17,12 @@ public class Account {
         this.avatar = avatar;
     }
 
+    public Account(String cardNo, String password, String avatar) {
+        this.cardNo = cardNo;
+        this.password = password;
+        this.avatar = avatar;
+    }
+
     public Account() {
     }
 

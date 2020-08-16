@@ -1,5 +1,7 @@
 package com.sc.filter;
 
+import com.sc.util.JdbcUtil;
+
 import javax.servlet.*;
 import java.io.IOException;
 
@@ -19,7 +21,9 @@ public class EncodingFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding(reqValue);
         servletResponse.setContentType(respValue);
-        filterChain.doFilter(servletRequest,servletResponse);
+        //顺带关个流
+        JdbcUtil.close();
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override

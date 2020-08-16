@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="9e88d4c9-2e3d-4a5c-b493-cb01bbd10ece">
+    <data-source source="LOCAL" name="@localhost" uuid="2a1b33ac-61be-429d-8228-b32ca273078d">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>

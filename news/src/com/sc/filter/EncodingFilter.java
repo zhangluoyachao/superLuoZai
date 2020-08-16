@@ -1,7 +1,6 @@
 package com.sc.filter;
 
 import javax.servlet.*;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
@@ -34,8 +33,9 @@ public class EncodingFilter implements Filter {
         //全部过滤后才会访问web资源
         //3.不满足 可以跳转
         //转换为子类调用方法
-        HttpServletResponse resp = (HttpServletResponse) servletResponse;
-        resp.sendRedirect("index.jsp");
+//
+//        HttpServletResponse resp = (HttpServletResponse) servletResponse;
+//        resp.sendRedirect("index.jsp");
     }
 
     @Override

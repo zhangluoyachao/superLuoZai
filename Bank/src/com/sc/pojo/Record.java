@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class Record {
     private Integer id;
-    private String cardID;
+    private String cardNo;
     private Date tran_date;
     private Double expense;//支出
     private Double income;//收入
@@ -12,9 +12,11 @@ public class Record {
     private String tran_type;//交易类型
     private String remark;//备注
 
-    public Record(Integer id, String cardID, Date tran_date, Double expense, Double income, Double balance, String tran_type, String remark) {
+    private Account account;//外键
+
+    public Record(Integer id, String cardNo, Date tran_date, Double expense, Double income, Double balance, String tran_type, String remark) {
         this.id = id;
-        this.cardID = cardID;
+        this.cardNo = cardNo;
         this.tran_date = tran_date;
         this.expense = expense;
         this.income = income;
@@ -23,14 +25,16 @@ public class Record {
         this.remark = remark;
     }
 
-    public Record(String cardID, Double expense, Double income, Double balance, String tran_type, String remark) {
-        this.cardID = cardID;
+    public Record(Double expense, Double income, String tran_type, String remark, Account account) {
         this.expense = expense;
         this.income = income;
-        this.balance = balance;
         this.tran_type = tran_type;
         this.remark = remark;
+        this.account = account;
+        this.balance = account.getBalance();
+        this.cardNo = account.getCardNo();
     }
+
 
     public Record() {
     }
@@ -43,12 +47,22 @@ public class Record {
         this.id = id;
     }
 
-    public String getCardID() {
-        return cardID;
+    public String getCardNo() {
+        return cardNo;
     }
 
-    public void setCardID(String cardID) {
-        this.cardID = cardID;
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+        this.balance = account.getBalance();
+        this.cardNo = account.getCardNo();
+    }
+
+    public void setCardNo(String cardNo) {
+        this.cardNo = cardNo;
     }
 
     public Date getTran_date() {

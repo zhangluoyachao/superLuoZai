@@ -2,15 +2,14 @@
 <%@ page language="java" pageEncoding="utf-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<c:if test="${t==null}">
-    <jsp:forward page="/doNewsServlet?pre=showNewsByTopic"/>
-</c:if>
+
 
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>新闻中国</title>
     <link href="${base}/css/main.css" rel="stylesheet" type="text/css"/>
-    <script language="javascript">
+    <script type="text/javascript">
         function check() {
             var login_username = document.getElementById("uname");
             var login_password = document.getElementById("upwd");
@@ -35,6 +34,9 @@
             location.href = ${base}+"/register.jsp";
         }
     </script>
+    <c:if test="${t==null}">
+        <jsp:forward page="/doNewsServlet?pre=showNewsByTopic"/>
+    </c:if>
 </head>
 
 <body onload="focusOnLogin()">

@@ -7,62 +7,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbec59a4-71c2-4ee5-9b7f-cd29e0cd36fb" name="Default Changelist" comment="学习JSTL">
-      <change afterPath="$PROJECT_DIR$/../Bank/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/Bank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/config/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/control/AccountServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/control/RecordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/RecordDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/impl/RecordDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/filter/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/pojo/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/pojo/Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/RecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/impl/RecordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/util/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/util/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/balance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/editpwd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/selrecord.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/tranaction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../news/src/com/sc/filter/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../news/src/com/sc/filter/sessionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSP/src/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bank/src/com/sc/filter/SessionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bank/web/bank/javaScript/check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bank/web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bank/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/artifacts/Bank_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/artifacts/Bank_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/dataSources/9e88d4c9-2e3d-4a5c-b493-cb01bbd10ece.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/dataSources/9e88d4c9-2e3d-4a5c-b493-cb01bbd10ece/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/dataSources/9e88d4c9-2e3d-4a5c-b493-cb01bbd10ece/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/control/AccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/control/AccountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/dao/impl/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/filter/EncodingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/pojo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/pojo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/pojo/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/pojo/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/classes/com/sc/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/balance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/balance.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/tranaction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/bank/tranaction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/artifacts/Bank_war_exploded/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/control/AccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/control/AccountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/dao/impl/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/filter/EncodingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/pojo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/pojo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/pojo/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/pojo/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/out/production/Bank/com/sc/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/control/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/control/AccountServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/pojo/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/pojo/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/bank/balance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/bank/balance.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/bank/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/bank/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/bank/tranaction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/bank/tranaction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bank/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/web/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QQ图片20200813233803.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/artifacts/news_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/artifacts/news_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/e4c88884-c900-4691-b594-49101768727e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/e4c88884-c900-4691-b594-49101768727e/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/b5aca99a-02a0-41bb-97a6-15b2cef76bb7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/dataSources/b5aca99a-02a0-41bb-97a6-15b2cef76bb7/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/dataSources/b5aca99a-02a0-41bb-97a6-15b2cef76bb7/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doNewsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doTopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/filter/EncodingFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/artifacts/news_war_exploded/newspages/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doNewsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doNewsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doTopicServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doTopicServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doNewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doNewsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doTopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doTopicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/controller/doUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/controller/doUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/out/production/news/com/sc/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../news/out/production/news/com/sc/filter/EncodingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/src/com/sc/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../news/src/com/sc/filter/EncodingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../news/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news/web/newspages/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../note/JSP/MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/MVC.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../note/JSP/jsp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/jsp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -156,9 +158,9 @@
     <session id="-372718481">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -175,7 +177,7 @@
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -426,7 +428,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -443,18 +444,14 @@
           <expand>
             <path>
               <item name="workspace" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="JSP" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="workspace" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="JSP" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="JavaSE" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,7 +460,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597376007420" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -812,6 +809,7 @@
       <workItem from="1597368775624" duration="3414000" />
       <workItem from="1597391074915" duration="16000" />
       <workItem from="1597397672152" duration="12000" />
+      <workItem from="1597495595032" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="学习JSTL">
       <created>1597031512379</created>
@@ -824,13 +822,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58576000" />
+    <option name="totallyTimeSpent" value="58603000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="67" width="1308" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="42" y="83" width="1635" height="960" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21968254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
