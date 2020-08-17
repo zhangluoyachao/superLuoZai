@@ -94,4 +94,10 @@ public class AccountDaoImpl implements AccountDao {
         rs.next();
         return rs.getDouble("balance");
     }
+
+    @Override
+    public int modifyPwd(Account account, String newPwd) {
+        String sql = "update account set password = ? where cardNo= ?";
+        return JdbcUtil.update(sql, newPwd, account.getCardNo());
+    }
 }

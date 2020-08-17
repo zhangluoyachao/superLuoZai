@@ -22,4 +22,6 @@ public interface AccountDao {
     int income(String cardNo, Double money);
 
     double getBalance(String cardNo) throws SQLException;
+
+    int modifyPwd(Account account, String newPwd);
 }

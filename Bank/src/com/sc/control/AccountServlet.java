@@ -41,6 +41,30 @@ public class AccountServlet extends HttpServlet {
             register(req, resp);
         if ("tran".equals(pre))
             tran(req, resp);
+        if ("modifyPwd".equals(pre))
+            modifyPwd(req, resp);
+
+    }
+
+    private void modifyPwd(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        //获取信息
+        Account thisAccount = (Account) req.getSession().getAttribute("account");
+        String thisPwd = thisAccount.getPassword();
+        String oldPwd = req.getParameter("oldPwd");
+        String newPwd = req.getParameter("newPwd");
+        PrintWriter out = resp.getWriter();
+        //判断密码是否输入正确
+        if (!thisPwd.equals(oldPwd)) {
+            out.print("<script>" +
+                    "alert('旧密码输入错误');" +
+                    "location.href='" + base + "/bank/editpwd.jsp';" +
+                    "</script>");
+        } else {
+            boolean b = as.modifyPwd(thisAccount, newPwd);
+            if (b)
+                req.setAttribute("status", "成功");
+            req.getRequestDispatcher("/bank/editpwd.jsp").forward(req, resp);
+        }
 
     }
 

@@ -114,4 +114,10 @@ public class AccountServiceImpl implements AccountService {
 
         return "未知原因！转账失败！";
     }
+
+    @Override
+    public boolean modifyPwd(Account account, String newPwd) {
+        account.setPassword(newPwd);
+        return ad.modifyPwd(account, newPwd) > 0 ? true : false;
+    }
 }

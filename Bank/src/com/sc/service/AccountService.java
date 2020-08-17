@@ -10,4 +10,6 @@ public interface AccountService {
     boolean insert(String cardNo, String password, String avatar);
 
     String transaction(String cardNo1, String cardNo2, String mon, String remark);
+
+    boolean modifyPwd(Account account, String newPwd);
 }
