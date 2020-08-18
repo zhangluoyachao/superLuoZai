@@ -20,10 +20,15 @@
     </div>
 </div>
 <div id="admin_bar">
+    <script type="text/javascript">
+        function exit() {
+            return confirm("确定退出吗？");
+        }
+    </script>
     <div id="status">
         管理员： ${user.username}
         <a href="#"><img style="width: 20px;height: 20px;" src="${base}/upload/${user.profile}"></a>
-        <a href="#">login out</a>
+        <a href="${base}/doUsersServlet?pre=loginOut" onclick="return exit()">login out</a>
 
     </div>
     <div id="channel"></div>

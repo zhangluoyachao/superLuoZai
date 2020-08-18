@@ -35,6 +35,22 @@ public class doUsersServlet extends HttpServlet {
             login(req, resp);
         else if ("register".equals(pre))
             register(req, resp);
+        else if ("loginOut".equals(pre))
+            loginOut(req, resp);
+        else if ("ajaxCheckName".equals(pre))
+            ajaxCheckName(req, resp);
+    }
+
+    private void ajaxCheckName(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String name = req.getParameter("name");
+        PrintWriter out = resp.getWriter();
+        out.print(us.isExist(name));
+
+    }
+
+    private void loginOut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        req.getSession().removeAttribute("user");
+        resp.sendRedirect(base + "/index.jsp");
     }
 
     @Override

@@ -9,6 +9,8 @@
     <meta http-equiv="description" content="This is my page"/>
     <title>注册</title>
     <link href="${base}/css/admin.css" rel="stylesheet" type="text/css"/>
+    <script src="${base}/javaScript/jquery-3.0.0.min.js" type="text/javascript"></script>
+
 </head>
 <body>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -27,7 +29,7 @@
         <fieldset>
             <legend>注册</legend>
 
-            <label>用户名：<input name="un"/></label><br>
+            <label>用户名：<input name="un" id="name"/><span id="mess"></span></label><br>
             <label> 密&nbsp&nbsp&nbsp码：<input type="text" name="pwd" id="pwd"></label><br>
 
             <label> 上传头像：<input type="file" name="profile" onchange="showImg(this)"/></label><br>
@@ -47,7 +49,11 @@
     function checkEmp() {
         var un = document.getElementById("un").value;
         var pwd = document.getElementById("pwd").value;
-        if (un == "") {
+        var mess = document.getElementById("mess").innerHTML
+        if (mess == "用户名存在，请重新输入！") {
+            alert("用户名存在，请重新输入！");
+            return false;
+        } else if (un == "") {
             alert("用户名不能为空！请重新填入！");
             un.focus();
             return false;
@@ -64,4 +70,29 @@
         var url = window.URL.createObjectURL(img);
         document.getElementById("img").setAttribute("src", url);
     }
+</script>
+
+<script>
+
+    $("#name").blur(function () {
+        var name = $("#name").val();
+        $.ajax({
+                async: true,
+                type: "post",
+                data: "name=" + name,
+                dataType: "text",
+                url: "${base}/doUsersServlet?pre=ajaxCheckName",
+                success: function (result) {
+                    //true表示存在
+                    if (result == "true") {
+                        $("#mess").html("用户名存在，请重新输入！").css("color", "red");
+                    } else if (result == "false") {
+                        $("#mess").html("用户名可用使用！").css("color", "green");
+                    }
+                }
+            }
+        )
+    });
+
+
 </script>

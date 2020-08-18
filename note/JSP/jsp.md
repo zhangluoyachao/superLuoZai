@@ -910,17 +910,17 @@ sos.close();
 
 ### 1、实现过滤器
 
-1. 实现一个 filter 接口
+1. **实现一个 filter 接口**
 
    **注：javax.servlet包下的**
 
-2. 实现三个方法：
+2. **实现三个方法：**
 
    1. init() 初始化
    2. doFilter() 拦截请求的方法
    3. destory() 销毁
 
-3. 配置过滤器
+3. **配置过滤器**
 
    1. 配置文件
 
@@ -991,7 +991,7 @@ sos.close();
       @WebFilter
       ```
 
-### 2、拦截处理请求doFilter
+### 2、过滤器执行
 
 ```java
  @Override
@@ -1015,3 +1015,141 @@ sos.close();
         resp.sendRedirect("index.jsp");
     }
 ```
+
+### 3、过滤器的执行原理
+
+服务器启动后加载web.xml，初始化过滤器
+
+注：如果配置了多个过滤器，会组织成一个过滤器链：
+
+1. 所有请求都必须经过过滤器链才能访问Web资源，过滤器链本身是一个栈，满足先进后出的特点
+2. 所有请求需要经过每个过滤器，执行顺序是按照web.xml中**<filter-mapping>标签**的**先后顺序**执行的。
+3. 每个过滤器都要通过filterChain.doFilter()方法放行
+
+
+
+## 五、监听器	Listener
+
+Listener 监听器，是Servlet规范中的一个组件，用于监听域对象的创建、删除以及属性修改等一些事件。
+
+### **1、监听器常见分类：**
+
+注：域对象是除了page外的作用域对象：
+
+1. HttpServletRequest
+2. HttpSession
+3. ServletContext
+
+#### a、域对象监听器
+
+监听域对象的创建和销毁
+
+#### b、域对象属性监听器
+
+监听域对象属性的增删改（新增、删除、替换）
+
+### 2、监听器实现方式
+
+1. **实现接口（根据域对象决定的接口）**
+
+   域对象监听器：
+
+   1. HttpSessionListener
+   2. HttpServletRequestListener
+   3. ServletContextListener
+
+   域对象属性监听器
+
+   1. HttpSessionAttributeListener
+   2. HttpServletRequestAttributeListener
+   3. ServletContextAttributeListener
+
+2. 实现方法
+
+   域对象监听器：创建和销毁
+
+   域对象属性监听器：属性的增删改
+
+### 3、配置监听器
+
+web.xml配置文件
+
+
+
+## 六、Ajax
+
+Ajax：异步的(asynchronous) javaScript and XML
+
+是一种不用加载整个页面，能够实现局部更新网页内容的技术
+
+### 1、同步和异步的区别
+
+1. 同步：发送请求—>等待服务器处理结果—>响应（返回结果）。这个期间，客户端浏览器不能做任何事情
+2. 异步：发送请求—>等待服务器处理**（这时浏览器仍然可以做其他事情）**—>响应。异步请求无需等待
+
+总结：同步请求相当于一条直线的队列，异步请求不在统一队列上，各走各的
+
+异步请求的好处：提高用户体验，提高访问速度
+
+### 2、ajax实现
+
+ajax实现方式通过jQuery的方法实现异步请求
+
+$.ajax()	$.post()	$.get()	$.getJson()	$.load()
+
+#### a、$.ajax()
+
+JSP中实现
+
+``` JSP
+<script src="${base}/javaScript/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script>
+    $("a").click(function () {
+        //发送异步请求
+        var color = "red";
+        $.ajax({
+            //async 是否异步，默认true
+            //通过情况下都是异步请求，都是true，这样会有更好的用户体验，但是也有需要同步执行的情况
+            //true时表示异步，执行$.ajax内的代码不需要等待服务器响应，直接运行之后的代码
+            //false表示同步，需要按顺序执行ajax内的代码，等执行完success或者error内的代码才会走后面的代码
+            async: false,
+            //type 请求方式 值:post/get 注:需要加双引号"post"
+            type: "post",
+            //data 数据 请求传递的数据 类似url传值key1=value1 & key2=value2
+            data: "color=yellow&pw=123",
+            //url 请求地址，指定异步请求地址
+            url: "${base}/ajax",
+            //dataType 服务器返回的数据类型 text json xml
+            dataType: "text",
+            //请求执行成功之后，所执行的函数，也叫回调函数
+            success: function (result) {
+                //参数是服务器返回的数据
+                color = result;
+            },
+            //请求执行失败之后，所执行的函数，失败的回调函数
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //参数：请求，文本状态，异常
+            }
+        });
+        $("h1").css("color", color);
+    });
+</script>
+```
+
+Servlet中实现
+
+```java
+//做什么？
+// 1、转码
+req.setCharacterEncoding("utf-8");
+resp.setContentType("text/html;charset=utf-8");
+// 2、获取数据
+String color = req.getParameter("color");
+String pw = req.getParameter("pw");
+// 3、对数据进行操作
+// 4、和同步请求不同，不能跳转
+//通过流将数据写入客户端
+PrintWriter out = resp.getWriter();
+out.print("yellow");
+```
+

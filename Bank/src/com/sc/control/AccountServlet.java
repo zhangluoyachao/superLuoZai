@@ -65,7 +65,6 @@ public class AccountServlet extends HttpServlet {
                 req.setAttribute("status", "成功");
             req.getRequestDispatcher("/bank/editpwd.jsp").forward(req, resp);
         }
-
     }
 
 

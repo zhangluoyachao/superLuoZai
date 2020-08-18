@@ -21,8 +21,8 @@ public class EncodingFilter implements Filter {
         System.out.println("过滤器处理请求");
 
         //1.实现过滤规则
-        servletRequest.setCharacterEncoding(reqValue);
-        servletResponse.setContentType(respValue);
+        servletRequest.setCharacterEncoding("utf-8");
+        servletResponse.setContentType("text/html;charset=utf-8");
 
         //2.满足要求放行
         //通过filterChain中的 doFilter放行

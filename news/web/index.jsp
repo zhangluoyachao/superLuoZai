@@ -31,7 +31,7 @@
         }
 
         function register() {
-            location.href = ${base}+"/register.jsp";
+            location.href = "${base}/register.jsp";
         }
     </script>
     <c:if test="${t==null}">

@@ -105,4 +105,13 @@
 
         通过注解不好调整顺序
     -->
+    <listener>
+        <listener-class>com.sc.listener.MyListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.sc.listener.MyAttributeListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.sc.listener.peopleListener</listener-class>
+    </listener>
 </web-app>
