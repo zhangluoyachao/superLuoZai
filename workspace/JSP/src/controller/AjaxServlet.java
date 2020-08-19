@@ -19,9 +19,9 @@ public class AjaxServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("接受异步请求");
         //做什么？
-        // 1、转码
-//        req.setCharacterEncoding("utf-8");
-//        resp.setContentType("text/html;charset=utf-8");
+        // 1、转码 过滤器有了可用不用干
+        //req.setCharacterEncoding("utf-8");
+        //resp.setContentType("text/html;charset=utf-8");
         // 2、获取数据
         String color = req.getParameter("color");
         String pw = req.getParameter("pw");

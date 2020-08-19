@@ -39,7 +39,7 @@
     </c:if>
 </head>
 
-<body onload="focusOnLogin()">
+<body>
 
 <div id="header">
     <div id="top_login">

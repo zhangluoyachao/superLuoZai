@@ -5,52 +5,77 @@
       <artifact name="news:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/web/newspages/video.jsp" line="41" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f72bd92b-6457-4d27-8bf7-457b8ccff328" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bank/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sc/listener/MyAttributeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sc/listener/MyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sc/listener/peopleListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sc/pojo/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/javaScript/jquery-3.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/newspages/video.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace/JSP/src/controller/AjaxServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace/JSP/src/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace/JSP/web/day7/ajax.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace/JSP/web/day7/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace/JSP/web/javaScript/jquery-3.0.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bank/src/com/sc/control/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank/src/com/sc/control/AccountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/controller/DoUpvoteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/controller/DoVideoCommentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/controller/DoVideoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/UpvoteUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/VideoCommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/VideoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/impl/UpvoteUserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/impl/VideoCommentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/dao/impl/VideoDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/pojo/UpvoteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/pojo/VideoComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/UpvoteUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/VideoCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/impl/UpvoteUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/impl/VideoCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sc/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/video/mysql.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/artifacts/video_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/libraries/gson_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/JSP/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/JSP/src/controller/showUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/JSP/web/WEB-INF/lib/gson-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/JSP/web/day8/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/video/video.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/video/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QQ图片20200813233803.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/207375c6-b86c-4531-962a-2eab0d56cf16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/207375c6-b86c-4531-962a-2eab0d56cf16/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0261b19e-2149-49ae-b9f1-7588bb22cd45/storage_v2/_src_/schema/ZHANG.zPsVBQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/pojo/Video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/WEB-INF/classes/com/sc/pojo/Video.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/console_element/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/console_element/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/video.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/newspages/video.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/news_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/news_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/news/com/sc/controller/doUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/com/sc/controller/doUsersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/com/sc/pojo/Video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/com/sc/pojo/Video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sc/pojo/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sc/pojo/Video.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/newspages/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/newspages/console_element/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/console_element/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/newspages/video.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/newspages/video.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/HTML5+CSS/HTML5.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/HTML5+CSS/HTML5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/JSP/ajax异步.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/ajax异步.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../note/JSP/jsp.md" beforeDir="false" afterPath="$PROJECT_DIR$/../note/JSP/jsp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/Typora/Typora配置.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/Typora/images/image-20200809111602223-1596943236853.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/Typora/设置右键创建md文件.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/git/git指令.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note/git/git配置.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/.idea/dataSources/d8bdc90d-d22f-42a0-8f35-791012ca5455/storage_v2/_src_/schema/ZHANG.zPsVBQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../workspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/JSP/JSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/JSP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/controller/AjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/controller/AjaxServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/filter/EncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/JSP/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/JSP/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/JSP/src/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/filter/EncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/out/production/JSP/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/production/JSP/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/artifacts/JSP_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../workspace/out/production/JSP/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/production/JSP/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../workspace/out/production/JSP/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/production/JSP/filter/EncodingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/out/production/JSP/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/production/JSP/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workspace/out/production/JSP/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../workspace/out/production/JSP/service/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,6 +110,27 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="ZHANG: schema" type="ac44c5e0:OracleImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="ZHANG: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="UPVOTEUSER: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="ZHANG: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="VIDEO: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="ZHANG: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="VIDEOCOMMENT: table" type="be4db629:OracleImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -147,45 +193,47 @@
     <session id="-1853464195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
+          <entry key="project.closed" value="43" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="9" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.16" value="4" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="5" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="AUSER" value="4" />
+          <entry key="AUSER" value="5" />
           <entry key="COUNTPEOPLE" value="1" />
           <entry key="ID_SEQ" value="1" />
           <entry key="NEWS" value="9" />
           <entry key="TOPIC" value="8" />
-          <entry key="USERS" value="11" />
+          <entry key="USERS" value="12" />
+          <entry key="VIDEO" value="1" />
           <entry key="VOIDE_COMMENT" value="1" />
           <entry key="class" value="2" />
           <entry key="css" value="1" />
-          <entry key="html" value="19" />
+          <entry key="html" value="20" />
           <entry key="iml" value="1" />
-          <entry key="java" value="232" />
+          <entry key="java" value="269" />
           <entry key="java___jb_tmp___" value="1" />
-          <entry key="jsp" value="194" />
+          <entry key="jsp" value="201" />
           <entry key="properties" value="1" />
           <entry key="rnc" value="1" />
           <entry key="sql" value="19" />
@@ -198,11 +246,11 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="34" />
-          <entry key="HTML" value="19" />
+          <entry key="Database Element" value="37" />
+          <entry key="HTML" value="20" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="232" />
-          <entry key="JSP" value="194" />
+          <entry key="JAVA" value="269" />
+          <entry key="JSP" value="201" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="RNG Compact" value="1" />
@@ -215,24 +263,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="59" />
-          <entry key="cell_1" value="48" />
-          <entry key="dummy" value="35" />
-          <entry key="html" value="242" />
-          <entry key="java" value="9477" />
-          <entry key="jsp" value="5819" />
-          <entry key="sql" value="220" />
-          <entry key="txt" value="13" />
+          <entry key="cell_1" value="74" />
+          <entry key="dummy" value="42" />
+          <entry key="html" value="304" />
+          <entry key="java" value="11147" />
+          <entry key="jsp" value="6515" />
+          <entry key="sql" value="298" />
+          <entry key="txt" value="34" />
           <entry key="xml" value="582" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="242" />
-          <entry key="JAVA" value="9477" />
-          <entry key="JSP" value="5819" />
-          <entry key="PLAIN_TEXT" value="48" />
-          <entry key="SQL" value="133" />
-          <entry key="Scratch" value="194" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="304" />
+          <entry key="JAVA" value="11147" />
+          <entry key="JSP" value="6514" />
+          <entry key="PLAIN_TEXT" value="76" />
+          <entry key="SQL" value="211" />
+          <entry key="Scratch" value="220" />
           <entry key="XML" value="582" />
         </counts>
       </usages-collector>
@@ -241,83 +290,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1298">
-              <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2436.26205/video.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4334">
-              <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/newspages/video.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Video.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/N_VIDEO.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="413">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sc/dao/UsersDao.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoUpvoteUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="465">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/dao/UpvoteUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="176">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/UpvoteUserDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/UpvoteUserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/service/UpvoteUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoVideoCommentServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoVideoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/newspages/console_element/left.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -327,8 +399,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -339,28 +411,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ce86866b-ca97-4711-9250-c514eefe830a/console.sql" />
-        <option value="$PROJECT_DIR$/web/control/news_add_pre_control.jsp" />
-        <option value="$PROJECT_DIR$/web/control/topic_list_control.jsp" />
-        <option value="$PROJECT_DIR$/web/control/news_list_control.jsp" />
-        <option value="$PROJECT_DIR$/web/control/login_control.jsp" />
-        <option value="$PROJECT_DIR$/src/com/sc/controller/newGetListServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/sc/controller/loginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/sc/controller/newsGetListServlet.java" />
-        <option value="$PROJECT_DIR$/web/control/topic_add_control.jsp" />
-        <option value="$PROJECT_DIR$/web/newspages/console_element/top.jsp" />
-        <option value="$PROJECT_DIR$/web/newspages/topic_add.jsp" />
-        <option value="$PROJECT_DIR$/web/newspages/topic_modify.jsp" />
-        <option value="$PROJECT_DIR$/web/control/news_add_control.jsp" />
-        <option value="$PROJECT_DIR$/src/com/sc/util/page.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/900635f7-8c22-47f1-976f-e615104b36df/console.sql" />
-        <option value="$PROJECT_DIR$/web/newspages/topic_list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/sc/util/page2.java" />
-        <option value="$PROJECT_DIR$/src/com/sc/util/Page.java" />
-        <option value="$PROJECT_DIR$/web/newspages/console_element/left.html" />
-        <option value="$PROJECT_DIR$/web/newspages/news_add.jsp" />
-        <option value="$PROJECT_DIR$/src/com/sc/pojo/News.java" />
-        <option value="$PROJECT_DIR$/src/com/sc/dao/impl/TopicDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/sc/dao/TopicDao.java" />
         <option value="$PROJECT_DIR$/src/com/sc/service/impl/TopicServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/sc/service/NewsService.java" />
@@ -384,12 +434,34 @@
         <option value="$PROJECT_DIR$/src/com/sc/listener/MyAttributeListener.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/sc/listener/peopleListener.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/web/newspages/video.jsp" />
-        <option value="$PROJECT_DIR$/src/com/sc/pojo/Video.java" />
         <option value="0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT.sql" />
+        <option value="0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/N_VIDEO.sql" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/videoDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/pojo/UpvoteUser.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/pojo/VideoComment.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/VideoComment.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/impl/VideoCommentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/VideoCommentService.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/impl/UpvoteUserService.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/impl/VideoCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/controller/DoVideoCommentServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/pojo/Video.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/VideoDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/impl/VideoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/VideoService.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/impl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/controller/DoVideoServlet.java" />
+        <option value="$PROJECT_DIR$/web/newspages/console_element/left.html" />
+        <option value="$PROJECT_DIR$/web/newspages/video.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/impl/UpvoterUserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/UpvoteUserService.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/impl/UpvoteUserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/dao/UpvoteUserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/service/impl/UpvoteUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sc/controller/DoUpvoteUserServlet.java" />
       </list>
     </option>
   </component>
@@ -413,9 +485,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="221" />
+    <option name="y" value="48" />
     <option name="width" value="1635" />
-    <option name="height" value="960" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -454,6 +527,116 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="impl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pojo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="impl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javaScript" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="newspages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="newspages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="console_element" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="video" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -465,7 +648,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -541,47 +723,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="sc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="news" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="news" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597754614302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597841291047" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -592,21 +740,22 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\superLuoZai\superLuoZai\news\web\javaScript" />
-      <recent name="D:\superLuoZai\superLuoZai\news\web" />
-      <recent name="D:\superLuoZai\superLuoZai\news\web\control" />
-      <recent name="D:\superLuoZai\superLuoZai\news\src\com\sc\config" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sc.filter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\superLuoZai\superLuoZai\news\web\video" />
       <recent name="D:\superLuoZai\superLuoZai\news\web\newspages" />
       <recent name="D:\superLuoZai\superLuoZai\news\Test\web\WEB-INF\lib" />
       <recent name="D:\superLuoZai\superLuoZai\news\.idea" />
       <recent name="D:\news\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sc.filter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\superLuoZai\superLuoZai\news\web\newspages" />
+      <recent name="D:\superLuoZai\superLuoZai\news\web\javaScript" />
+      <recent name="D:\superLuoZai\superLuoZai\news\web" />
+      <recent name="D:\superLuoZai\superLuoZai\news\web\control" />
+      <recent name="D:\superLuoZai\superLuoZai\news\src\com\sc\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -974,6 +1123,12 @@
       <workItem from="1597748109290" duration="3420000" />
       <workItem from="1597752568428" duration="1950000" />
       <workItem from="1597754563521" duration="55000" />
+      <workItem from="1597797541552" duration="152000" />
+      <workItem from="1597799879827" duration="3979000" />
+      <workItem from="1597818945672" duration="598000" />
+      <workItem from="1597834616601" duration="238000" />
+      <workItem from="1597835160122" duration="993000" />
+      <workItem from="1597836239338" duration="5047000" />
     </task>
     <task id="LOCAL-00001" summary="学习学习！">
       <created>1597048103175</created>
@@ -1000,12 +1155,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126761000" />
+    <option name="totallyTimeSpent" value="137768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1575067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2191689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1015,7 +1171,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.28794327" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.9574468" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.95460993" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1024,12 +1180,12 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.364539" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.5531915" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32681867" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32624114" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.16689008" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.12868632" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24932976" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -1054,94 +1210,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/newspages/news_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://900635f7-8c22-47f1-976f-e615104b36df/schema/ZHANG/table/AUSER" />
-    <entry file="das://900635f7-8c22-47f1-976f-e615104b36df/schema/ZHANG/table/COUNTPEOPLE" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36b0ff5f-f576-43bb-b0a5-af2959a62790/console_1.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36b0ff5f-f576-43bb-b0a5-af2959a62790/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4c88884-c900-4691-b594-49101768727e/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/com/sc/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/NewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/TopicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/service/TopicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e4c88884-c900-4691-b594-49101768727e/schema/ZHANG/table/TOPIC" />
-    <entry file="das://e4c88884-c900-4691-b594-49101768727e/schema/ZHANG/table/NEWS" />
-    <entry file="file://$PROJECT_DIR$/src/com/sc/service/UsersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e4c88884-c900-4691-b594-49101768727e/schema/ZHANG/table/USERS" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b5aca99a-02a0-41bb-97a6-15b2cef76bb7/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/TopicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b5aca99a-02a0-41bb-97a6-15b2cef76bb7/schema/ZHANG/table/USERS" />
-    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/207375c6-b86c-4531-962a-2eab0d56cf16/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/com/sc/controller/doNewsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1198,13 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/newspages/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sc/listener/peopleListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -1220,13 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sc/controller/doUsersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -1237,24 +1291,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0261b19e-2149-49ae-b9f1-7588bb22cd45/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/NewsDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2002">
           <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/UsersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1265,51 +1305,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2436.26205/video.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#779#785#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT" />
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT.sql" />
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/N_VIDEO.sql" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2436.26205/video.jsp" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4334">
+        <state relative-caret-position="635">
           <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/newspages/video.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/N_VIDEO.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1320,15 +1323,276 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/AUSER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VOIDE_COMMENT.sql">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/UsersDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/USERS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/UpvoteUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/VideoComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/VideoCommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/VideoCommentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/VideoCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/VideoCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/newspages/console_element/top.jsp">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/VideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/VideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/VideoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/VideoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0261b19e-2149-49ae-b9f1-7588bb22cd45/schema/ZHANG/table/VIDEO">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/newspages/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/newspages/console_element/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/pojo/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoVideoCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoVideoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/newspages/video.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/impl/UpvoteUserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/dao/UpvoteUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/UpvoteUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/service/impl/UpvoteUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sc/controller/DoUpvoteUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="ideajad">

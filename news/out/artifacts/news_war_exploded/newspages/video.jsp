@@ -4,18 +4,20 @@
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 <html>
-<head></head>
+<head>
+    <script src="${base}/javaScript/jquery-3.0.0.min.js" type="text/javascript"></script>
+</head>
 <body>
 <div style="width:730px; margin:20px auto;">
     <video controls="controls" autoplay>
-        <source src="<%=basePath%>video/mysql.mp4" type="video/mp4"/>
-        示例视频1
-
-        您的浏览器不支持video标签
+        <source src="<%=basePath%>video/${video.path}" type="video/mp4"/>
+        ${video.videoName}
     </video>
     <p>
-        <span style="font-weight:bold; font-size:20px; color:blue;">点赞</span> &nbsp;
-        <span style="background-color:green; padding:5px; border-radius:5px">36</span>
+        <span style="font-weight:bold; font-size:20px; color:blue;">
+            <input type="button" value="点赞">
+        </span> &nbsp;
+        <span id="uvCount" style="background-color:green; padding:5px; border-radius:5px">${video.upvoteCount}</span>
     </p>
     <hr>
     <h3>评论列表</h3>
@@ -36,3 +38,11 @@
 </div>
 </body>
 </html>
+<script>
+    $("input[type='button']").click(function () {
+        $.post("/upvoteUser?pre=ajaxUpvote&UserName=${user.username}&videoName=${video.videoName}",
+            function (result) {
+                $("#uvCount").html(result);
+            });
+    });
+</script>

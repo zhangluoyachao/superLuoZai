@@ -22,5 +22,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.20" level="application_server_libraries" />
     <orderEntry type="library" name="ojdbc6" level="project" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="gson-2.3.1" level="project" />
   </component>
 </module>

@@ -38,28 +38,54 @@
 
             <input type="submit" value="提交"/>
             <input type="reset"/>
+            <span id="error" style="color: red"></span>
 
         </fieldset>
 
     </form>
+
 </div>
 </body>
 </html>
 <script type="text/javascript">
+    var b;
+    $("#name").blur(function () {
+        var name = $("#name").val();
+        $.ajax({
+                async: true,
+                type: "post",
+                data: "name=" + name,
+                dataType: "text",
+                url: "${base}/doUsersServlet?pre=ajaxCheckName",
+                success: function (result) {
+                    b = result;
+                    //true表示存在
+                    if (result == "true") {
+                        $("#mess").html("用户名存在，请重新输入！").css("color", "red");
+                    } else if (result == "false") {
+                        $("#mess").html("用户名可用使用！").css("color", "green");
+                    }
+                }
+            }
+        )
+    });
+
     function checkEmp() {
-        var un = document.getElementById("un").value;
-        var pwd = document.getElementById("pwd").value;
-        var mess = document.getElementById("mess").innerHTML
-        if (mess == "用户名存在，请重新输入！") {
-            alert("用户名存在，请重新输入！");
+        var un = $("input[name=un]").val();
+        var pwd = $("input[name=pwd]").val();
+        var profile = $("input[name=profile]").val();
+
+        if (un == null || un == "") {
+            $("#error").html("用户名不能为空！请重新填入！");
             return false;
-        } else if (un == "") {
-            alert("用户名不能为空！请重新填入！");
-            un.focus();
+        } else if (pwd == null || pwd == "") {
+            $("#error").html("密码不能为空！请重新填入！");
             return false;
-        } else if (pwd == "") {
-            alert("密码不能为空！请重新填入！");
-            pwd.focus();
+        } else if (profile == null || profile == "") {
+            $("#error").html("请上传图片！");
+            return false;
+        } else if (b == "true") {
+            $("#error").html("用户名重复!");
             return false;
         }
         return true;
@@ -72,27 +98,3 @@
     }
 </script>
 
-<script>
-
-    $("#name").blur(function () {
-        var name = $("#name").val();
-        $.ajax({
-                async: true,
-                type: "post",
-                data: "name=" + name,
-                dataType: "text",
-                url: "${base}/doUsersServlet?pre=ajaxCheckName",
-                success: function (result) {
-                    //true表示存在
-                    if (result == "true") {
-                        $("#mess").html("用户名存在，请重新输入！").css("color", "red");
-                    } else if (result == "false") {
-                        $("#mess").html("用户名可用使用！").css("color", "green");
-                    }
-                }
-            }
-        )
-    });
-
-
-</script>
